@@ -1,0 +1,652 @@
+{
+	"info": {
+		"_postman_id": "2914b79d-021c-4acc-b1a2-9f3a62ea0fcd",
+		"name": "cinebit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Detail",
+			"item": [
+				{
+					"name": "Create detail",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Nanatsu no Taizai \",\n    \"poster_path\": \"https://image.tmdb.org/t/p/w600_and_h900_bestv2/sY7LcEBp3A9FQaJf1qMcDygJZoG.jpg\",\n    \"genres\": \"Action\",\n    \"original_title\": \"七つの大罪\",\n    \"overview\": \"Cuando fueron acusados de intentar derrocar la monarquía, los temidos guerreros conocidos como los Siete Pecados Capitales fueron exiliados. Sin embargo, la tercera princesa del Reino de Britannia, Elizabeth, descubre la verdad, que en realidad los guerreros fueron inculpados por los Caballeros Sagrados, la guardia personal del rey, pero es demasiado tarde y no puede impedir que la guardia mate al rey y se apodere del trono. La princesa decide escapar e ira en busca de los Pecados para que le ayuden a recuperar el reino, pero el primero de los guerreros que conoce, Meliodas, es un joven cuyas únicas preocupaciones consisten en atender su taberna junto a Hork, un cerdo que habla. Y ni siquiera tiene una espada de verdad. ¿Acaso exageraban las leyendas acerca de estos guerreros?\",\n    \"popularity\": \"7.8\",\n    \"release_date\": \"2014\",\n    \"runtime\": \"24\",\n    \"vote_average\": \"100\",\n    \"vote_count\": \"25\",\n    \"director\": \"Shoutarou Suga\",\n    \"profile_path\": \"https://image.tmdb.org/t/p/w600_and_h900_bestv2/2zg75e5foowuR9g6tGRDFR2gio5.jpg\",\n    \"trailer\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/detail/create",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"detail",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Maléfica: Maestra del Mal\",\n    \"poster_path\": \"https://image.tmdb.org/t/p/w600_and_h900_bestv2/eZOkXqHXWCKytd78TggAtJ0M3gU.jpg\",\n    \"genres\": \"Fantasía\",\n    \"original_title\": \"Maleficent: Mistress of Evil\",\n    \"overview\": \"Secuela de Maléfica que cuenta la vida de Maléfica y Aurora, así como las alianzas que formarán para sobrevivir a las amenazas del mágico mundo en el que habitan.\",\n    \"popularity\": \"7.2\",\n    \"release_date\": \"18 octubre 2019\",\n    \"runtime\": \"118\",\n    \"vote_average\": \"150\",\n    \"vote_count\": \"25\",\n    \"director\": \"Joachim Rønning\",\n    \"profile_path\": \"https://image.tmdb.org/t/p/w600_and_h900_bestv2/6Ngvvc3WIPgg7L0vvMUYs4uHYjR.jpg\",\n    \"trailer\": \"https://www.youtube.com/watch?v=trQ2Ft_A478\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/detail/edit/5dc8f64e590f6f5da3109d68",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"detail",
+								"edit",
+								"5dc8f64e590f6f5da3109d68"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/detail/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"detail",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFindId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/detail/5dc8f64e590f6f5da3109d68",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"detail",
+								"5dc8f64e590f6f5da3109d68"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/detail/delete/5dc8f64e590f6f5da3109d68",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"detail",
+								"delete",
+								"5dc8f64e590f6f5da3109d68"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Cast",
+			"item": [
+				{
+					"name": "Create Cast",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"detailId\":\"5dc979c9447b17169057fd09\",\r\n\t\"name\":\"Aoi Yuki\",\r\n\t\"character\":\"Diane\",\r\n\t\"profile_path\":\"https://image.tmdb.org/t/p/w600_and_h900_bestv2/cIFTJFbPhN55T9WW2P064Wh8qty.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/cast/create",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cast",
+								"create"
+							]
+						},
+						"description": "Create 5 principal Actors"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"detailId\":\"5dc97226ef50b547d4a86b49\",\r\n\t\"name\":\"Angelina Jolie\",\r\n\t\"character\":\"Maléfica\",\r\n\t\"profile_path\":\"https://image.tmdb.org/t/p/w600_and_h900_bestv2/gD8jlGkQC8GBajulNlIzBK1YEO1.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/cast/edit/5dc97226ef50b547d4a86b49",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cast",
+								"edit",
+								"5dc97226ef50b547d4a86b49"
+							]
+						},
+						"description": "Edit one Of actor by Id"
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/cast/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cast",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFindId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/cast/5dc975973d1181053860744c",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cast",
+								"5dc975973d1181053860744c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/cast/delete/5dc975973d1181053860744c",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cast",
+								"delete",
+								"5dc975973d1181053860744c"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Season",
+			"item": [
+				{
+					"name": "Create Season",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"detailId\":\"5dc979c9447b17169057fd09\",\r\n\t\"season\":\"1\",\r\n\t\"air_date\":\"2014-10-05\",\r\n\t\"name\":\"Temporada 3\",\r\n\t\"overview\":\"Tercera temporada\",\r\n\t\"poster_path\":\"https://image.tmdb.org/t/p/w130_and_h195_bestv2/sY7LcEBp3A9FQaJf1qMcDygJZoG.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/season/create",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"season",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"detailId\":\"5dc979c9447b17169057fd09\",\r\n\t\"season\":\"1\",\r\n\t\"air_date\":\"2014-10-05\",\r\n\t\"name\":\"Temporada 1\",\r\n\t\"overview\":\"Primer temporada\",\r\n\t\"poster_path\":\"https://image.tmdb.org/t/p/w130_and_h195_bestv2/sY7LcEBp3A9FQaJf1qMcDygJZoG.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/season/edit/5dc97dc5447b17169057fd0b",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"season",
+								"edit",
+								"5dc97dc5447b17169057fd0b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/season/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"season",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/season/5dc97dc5447b17169057fd0b",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"season",
+								"5dc97dc5447b17169057fd0b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/season/delete/5dca20913949df0390b06518",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"season",
+								"delete",
+								"5dca20913949df0390b06518"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Episode",
+			"item": [
+				{
+					"name": "Create Episode",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"seasonId\":\"5dc97dc5447b17169057fd0b\",\n\t\"episode_number\": \"1\",\n\t\"air_date\":\"2014-10-05\",\n\t\"name\":\"Los Siete Pecados Capitales\",\n\t\"overview\":\"La tercera princesa del Reino de Liones, Elizabeth, encuentra a Meliodas, que es el dueño del bar El sombrero del jabalí y es también uno de los siete pecados capitales. Con su identidad al descubierto, es perseguida por Twigo a quien Meliodas derrota rápidamente. La princesa se une a él en su viaje para encontrar a los demás pecados capitales con el fin de derrotar a los Caballeros Sagrados, que han orquestado un golpe de Estado y han derrocado al rey.\",\n\t\"poster_path\":\"https://image.tmdb.org/t/p/w227_and_h127_bestv2/nMHFLNSybmNCP9At5HSlXM3g2qa.jpg\",\n\t\"vote_average\":\"7.3\",\n\t\"vote_count\":\"340\"\n\t\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/episode/create",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"episode",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"seasonId\":\"5dc97dc5447b17169057fd0b\",\n\t\"episode_number\": \"1\",\n\t\"air_date\":\"2014-10-05\",\n\t\"name\":\"Los Siete Pecados Capitales\",\n\t\"overview\":\"La tercera princesa del Reino de Liones, Elizabeth, encuentra a Meliodas, que es el dueño del bar El sombrero del jabalí y es también uno de los siete pecados capitales. Con su identidad al descubierto, es perseguida por Twigo a quien Meliodas derrota rápidamente. La princesa se une a él en su viaje para encontrar a los demás pecados capitales con el fin de derrotar a los Caballeros Sagrados, que han orquestado un golpe de Estado y han derrocado al rey.\",\n\t\"poster_path\":\"https://image.tmdb.org/t/p/w227_and_h127_bestv2/nMHFLNSybmNCP9At5HSlXM3g2qa.jpg\",\n\t\"vote_average\":\"7.3\",\n\t\"vote_count\":\"340\"\n\t\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/episode/edit/5dc9887f1f058153ec3cf8fa",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"episode",
+								"edit",
+								"5dc9887f1f058153ec3cf8fa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/episode/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"episode",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/episode/5dc9887f1f058153ec3cf8fa",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"episode",
+								"5dc9887f1f058153ec3cf8fa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/episode/delete/5dc9887f1f058153ec3cf8fa",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"episode",
+								"delete",
+								"5dc9887f1f058153ec3cf8fa"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/details/tv/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"details",
+						"tv",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Credits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/credits/movie/550",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"credits",
+						"movie",
+						"550"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Trailer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/video/movie/290859",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"video",
+						"movie",
+						"290859"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Season",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/season/tv/1668/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"season",
+						"tv",
+						"1668",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/list/details",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"list",
+						"details"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
