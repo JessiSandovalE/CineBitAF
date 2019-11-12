@@ -10,7 +10,7 @@ let listRouter = require('./routes/list');
 var castRouter = require('./routes/cast');
 var seasonRouter = require('./routes/season');
 var episodeRouter = require('./routes/episode');
-let usuarioRouter = require('./routes/usuario')
+let usuarioRouter = require('./routes/usuario');
 
 
 var app = express();
