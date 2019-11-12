@@ -1,0 +1,30 @@
+.vid {
+    width: 100%;
+    height: auto;
+}
+.video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: -10;
+    visibility: visible;
+}
+.logo{
+     color: white;
+     font-size: 60px;
+     margin-left: 40%;
+     margin-top: 20% ;
+}
+.img{
+/*     background-image: url(../../../assets/img/3.png); */
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    margin-top: 600px;
+    margin-left: 25%;
+    width: 50%;
+    height: 600px;
+    font-size: 30px;
+    text-align: center;
+}
