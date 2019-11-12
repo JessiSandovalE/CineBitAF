@@ -9,7 +9,9 @@ let detailRouter = require('./routes/detail');
 let listRouter = require('./routes/list');
 var castRouter = require('./routes/cast');
 var seasonRouter = require('./routes/season');
-var episodeRouter = require('./routes/episode')
+var episodeRouter = require('./routes/episode');
+let usuarioRouter = require('./routes/usuario')
+
 
 var app = express();
 
@@ -33,6 +35,7 @@ app.use('/list', listRouter);
 app.use('/cast', castRouter);
 app.use('/season', seasonRouter);
 app.use('/episode', episodeRouter);
+app.use('/api/usuarios', usuarioRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
