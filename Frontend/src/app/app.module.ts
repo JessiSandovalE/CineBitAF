@@ -17,6 +17,9 @@ import { WomakeHomeComponent } from './myComponents/womake-home/womake-home.comp
 import { AppGeneralFiltrosComponent } from './myComponents/app-general-filtros/app-general-filtros.component';
 import { PerfilAdminComponent } from './myComponents/perfil-admin/perfil-admin.component';
 import { PerfilAdminAgregarComponent } from './myComponents/perfil-admin-agregar/perfil-admin-agregar.component';
+import { PerfilUsuarioEditarComponent } from './myComponents/perfil-usuario-editar/perfil-usuario-editar.component';
+import { PerfilUsuarioAvatarsComponent } from './myComponents/perfil-usuario-avatars/perfil-usuario-avatars.component';
+import { PerfilUsuarioComponent } from './myComponents/perfil-usuario/perfil-usuario.component';
 
 
 /* SERVICIOS */
@@ -37,6 +40,15 @@ const routes: Routes = [
   },
   {
     path: 'contenidoConFiltros', component: AppGeneralFiltrosComponent
+  },
+  {
+    path: 'perfilUsuario', component: PerfilUsuarioComponent
+  },
+  {
+    path: 'perfilUsuarioAvatars', component: PerfilUsuarioAvatarsComponent
+  },
+  {
+    path: 'perfilUsuarioEditar', component: PerfilUsuarioEditarComponent
   },
   {
     path: 'perfilAdmin', component: PerfilAdminComponent
@@ -60,6 +72,10 @@ const routes: Routes = [
     AppGeneralFiltrosComponent,
     PerfilAdminComponent,
     PerfilAdminAgregarComponent,
+
+    PerfilUsuarioEditarComponent,
+    PerfilUsuarioAvatarsComponent,
+    PerfilUsuarioComponent,
   ],
   imports: [
     BrowserModule,
