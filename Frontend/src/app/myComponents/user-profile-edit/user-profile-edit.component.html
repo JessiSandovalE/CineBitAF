@@ -1,0 +1,27 @@
+<div class="perfil">
+        <div class="parte1">
+                <p>PERFIL</p>
+                <div class="imgPerfil">
+                    <div class="sombraImgPerfil"></div>
+                    <div class="imgAvatar"><a routerLink="/avatar" routerLinkActive="active"><img
+                                src="../../../assets/img/avatars/avatar3.png" width="152px" height="152px"></a></div>
+                </div>
+                <img src="../../../assets/img/botones/fondoImgPerfil.png" width="400px" height="400px">
+            </div>
+
+
+    <div class="parte4">
+        <div><button class="btnx"><a routerLink="/userProfile" routerLinkActive="active"><img src="../../../assets/img/botones/botonQuitarPeli.png" width="50px" height="50px"></a></button></div>
+
+    <form [formGroup]=userForm (ngSubmit)="enviar (userForm.value)">
+        <h4>NOMBRE USUARIO</h4>
+        <input formControlName="name" type="text" placeholder="Username"> <br>
+        <h4>CONTRASEÑA</h4>
+        <input formControlName="password" type="password" placeholder="Password"><br>
+        <h4>EMAIL</h4>
+        <input formControlName="email" type="email" placeholder="email">
+
+        <button [disabled]="userForm.invalid" type="submit" class="change">OK</button>
+
+    </form>
+</div>
