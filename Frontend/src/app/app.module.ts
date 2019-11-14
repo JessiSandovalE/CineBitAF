@@ -20,6 +20,8 @@ import { UserProfileAvatarComponent} from './myComponents/user-profile-avatar/us
 
 import { from } from 'rxjs';
 import { LoginComponent } from './myComponents/login/login.component';
+import { BitLikeComponent } from './myComponents/bit-like/bit-like.component';
+import { SelectedPeliComponent } from './myComponents/selected-peli/selected-peli.component';
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import { LoginComponent } from './myComponents/login/login.component';
     UserProfileComponent,
     UserProfileEditComponent,
     UserProfileAvatarComponent,
-    LoginComponent
+    LoginComponent,
+    BitLikeComponent,
+    SelectedPeliComponent
 
   ],
   imports: [

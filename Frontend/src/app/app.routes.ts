@@ -7,6 +7,7 @@ import { UserProfileComponent } from './myComponents/user-profile/user-profile.c
 import { UserProfileAvatarComponent} from './myComponents/user-profile-avatar/user-profile-avatar.component';
 import { UserProfileEditComponent } from './myComponents/user-profile-edit/user-profile-edit.component';
 import { LoginComponent }from './myComponents/login/login.component';
+import { BitLikeComponent } from './myComponents/bit-like/bit-like.component';
 
 const APP_ROUTES: Routes =[
     { path: 'home', component: HomeComponent },
@@ -15,6 +16,7 @@ const APP_ROUTES: Routes =[
     { path: 'editUser', component: UserProfileEditComponent },
     { path: 'avatar', component: UserProfileAvatarComponent },
     { path: 'login', component: LoginComponent },
+    { path: 'bitLike', component: BitLikeComponent },
     { path: '**', pathMatch:'full', redirectTo: 'home'},
 
     

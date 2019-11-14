@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { contenidoService } from '../../Servicios/contenido.service';
 
 @Component({
   selector: 'app-admin-profile',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminProfileComponent implements OnInit {
 
-  constructor() { }
+  listaDePeliculas: any = []
 
-  ngOnInit() {
+
+  constructor(private contenidoService: contenidoService) { }
+  
+  obtenerContenido(){
+    this.contenidoService.getContenido().subscribe(res=>{
+  
+      console.log(res);
+  
+     this.listaDePeliculas = res
+    })
   }
-
-}
+  
+  
+    ngOnInit() {
+      this.obtenerContenido();
+    }
+  
+  }

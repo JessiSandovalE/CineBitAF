@@ -2,18 +2,18 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { map, catchError, tap } from 'rxjs/operators';
-import { Usuarios } from "../module/user.module";
+import { Usuarios } from "src/module/user.module";
 
 @Injectable({
   providedIn: "root"
 })
 export class UserService {
-  private url =
-    "http://localhost:3000/api/usuarios"; /* variable privada que solo sirve en este modulo */
+  private url ="http://localhost:3000/api/usuarios"; /* variable privada que solo sirve en este modulo */
   
   
 
-  constructor(private _http: HttpClient) {}
+  constructor(private _http: HttpClient,
+    private userservice: UserService) {}
 
 
   private extractData(res: Response) {
