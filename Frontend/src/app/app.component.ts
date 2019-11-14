@@ -17,10 +17,7 @@ export class AppComponent {
   constructor(private _http: HttpClient) {}
 
   ngOnInit() {
-    this._http
-      .get("https://jsonplaceholder.typicode.com/users")
-      .subscribe((users: any[]) => (this.usuarios = users));
-    console.log(this.usuarios);
+    
   }
 }
 
