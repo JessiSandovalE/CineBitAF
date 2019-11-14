@@ -78,19 +78,19 @@
     </div>
 
 
-
     <div class="contenedorGeneral">
 
-        <div class="mov" *ngFor="let genero of slide">
+        <div class="mov" *ngFor='let pelicula of listaDePeliculas'>
             <div class="card">
                 <div class="imgBx">
-                    <a ><img width="200px" height="300px" [src]="genero.img" /> </a>
+                    <a routerLink={{pelicula.url}}><img width="200px" height="300px" [src]="pelicula.poster_path" /> </a>
                 </div>
                 <div class="details">
-                    <h3>Las Chicas del Cable</h3>
+                    <h3>{{pelicula.title}}</h3>
                 </div>
             </div>
         </div>
 
     </div>
+
 

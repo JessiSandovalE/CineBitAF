@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { contenidoService } from '../../services/contenido.service';
+
 @Component({
-  selector: 'app-content',
-  templateUrl: './content.component.html',
-  styleUrls: ['./content.component.css']
+  selector: 'perfilAdmin',
+  templateUrl: './perfil-admin.component.html',
+  styleUrls: ['./perfil-admin.component.css']
 })
-export class ContentComponent implements OnInit {
-/* 
-  
+export class PerfilAdminComponent implements OnInit {
+
+
   slide = [
     {
       artista: "Historia1",
@@ -41,36 +41,10 @@ export class ContentComponent implements OnInit {
       bot: true
     }
   ];
- */  
-  
-/*   constructor() { }
+
+  constructor() { }
 
   ngOnInit() {
   }
- */
-
- 
-
- 
-listaDePeliculas: any = []
-
-
-constructor(private contenidoService: contenidoService) { }
-
-obtenerContenido(){
-  this.contenidoService.getContenido().subscribe(res=>{
-
-    console.log(res);
-
-   this.listaDePeliculas = res
-  })
-}
-
-
-  ngOnInit() {
-    this.obtenerContenido();
-  }
 
 }
-
-

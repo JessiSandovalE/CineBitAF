@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 //Rutas
 import { APP_ROUTING } from './app.routes';
@@ -17,6 +18,7 @@ import { HomeComponent } from './myComponents/home/home.component';
 import { UserProfileComponent } from './myComponents/user-profile/user-profile.component';
 import { UserProfileEditComponent } from './myComponents/user-profile-edit/user-profile-edit.component';
 import { UserProfileAvatarComponent} from './myComponents/user-profile-avatar/user-profile-avatar.component';
+import { PerfilAdminComponent } from './myComponents/perfil-admin/perfil-admin.component';
 
 import { from } from 'rxjs';
 import { LoginComponent } from './myComponents/login/login.component';
@@ -32,13 +34,16 @@ import { LoginComponent } from './myComponents/login/login.component';
     UserProfileComponent,
     UserProfileEditComponent,
     UserProfileAvatarComponent,
-    LoginComponent
+    LoginComponent,
+    PerfilAdminComponent
 
   ],
   imports: [
     BrowserModule,
     APP_ROUTING,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

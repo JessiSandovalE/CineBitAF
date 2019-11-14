@@ -77,9 +77,10 @@
   
   .mov{
     display: flex;
-    justify-content: space-around;
-    margin-top:50px;
-    margin-bottom: 50px;
+    /* margin-top:50px;
+    margin-bottom: 50px; */
+    margin: 50px;
+    float: left;
   }
   .card{
     display: flex;
