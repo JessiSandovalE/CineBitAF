@@ -2,23 +2,28 @@
 
 const mongoose = require('mongoose'); //llamado del modulo mongoose
 
+
 const Schema = mongoose.Schema; //creador de plantilla de modelo mongoose
 
 const usuariosSchema = new Schema({
     nombre: {
-        type:String, required: true
+        type: String,
+        required: true
     },
-    edad:{
-        type: Number, default: 15
+    edad: {
+        type: Number,
+        default: 15
     },
-    password:{
-        type: String, required : true
+    password: {
+        type: String,
+        required: true
     },
-    correo:{
-        type:String
+    correo: {
+        type: String
     },
     role: {
-        type: String, default: "user"
+        type: String,
+        default: "user"
     },
     imagen: {
         type: String
