@@ -8,6 +8,7 @@ import { UserProfileAvatarComponent} from './myComponents/user-profile-avatar/us
 import { UserProfileEditComponent } from './myComponents/user-profile-edit/user-profile-edit.component';
 import { LoginComponent }from './myComponents/login/login.component';
 import { PerfilAdminComponent } from './myComponents/perfil-admin/perfil-admin.component';
+import { PerfilAdminAgregarComponent} from './myComponents/perfil-admin-agregar';
 
 const APP_ROUTES: Routes =[
     { path: 'home', component: HomeComponent },
@@ -17,6 +18,7 @@ const APP_ROUTES: Routes =[
     { path: 'avatar', component: UserProfileAvatarComponent },
     { path: 'login', component: LoginComponent },
     { path: 'adminProfile', component: PerfilAdminComponent },
+    
     { path: '**', pathMatch:'full', redirectTo: 'home'},
 
     
