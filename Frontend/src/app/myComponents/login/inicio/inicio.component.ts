@@ -3,6 +3,7 @@ import { FormGroup, FormBuilder, Validators } from "@angular/forms";
 import  { Usuarios } from '../../../module/user.module';
 import { UserService } from "../../../services/user.service"; 
 import {Router} from "@angular/router"
+import { empty } from 'rxjs';
 
 @Component({
   selector: 'inicio',
@@ -35,11 +36,12 @@ export class InicioComponent implements OnInit {
     this.usuariosservice.getUsuario(email).subscribe((result) => {
        this.usuario = result;
        console.log(this.usuario)
-       this.CompararPasswords(contrasena,this.usuario)
+       this.CompararPasswords(contrasena,this.usuario[0])
      }, (err) => {
        console.log(err);
      });
   }
+
 
   CompararPasswords(ingresado,leido){
     console.log(ingresado,leido)
