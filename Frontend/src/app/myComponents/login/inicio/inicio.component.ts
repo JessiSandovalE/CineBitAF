@@ -11,7 +11,7 @@ import {Router} from "@angular/router"
 })
 export class InicioComponent implements OnInit {
 
-  people= {nombre:"", correo:"", password:""};
+  people= {nombre:"",  correo:"", password:""};
   usuario: any;
   local = {nombre:""};
 
@@ -35,7 +35,7 @@ export class InicioComponent implements OnInit {
     this.usuariosservice.getUsuario(email).subscribe((result) => {
        this.usuario = result;
        console.log(this.usuario)
-       this.CompararPasswords(contrasena,this.usuario[0])
+       this.CompararPasswords(contrasena,this.usuario)
      }, (err) => {
        console.log(err);
      });
