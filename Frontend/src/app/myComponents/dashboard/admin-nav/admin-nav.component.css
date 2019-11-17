@@ -1,0 +1,45 @@
+
+nav{
+  position: fixed;
+  width: 100%;
+  height: 10%;
+  margin: auto;
+  overflow:hidden;
+  background-color: #912932;
+  align-items: center;
+  z-index: 100;
+}
+.logo {
+  float: left;
+  margin-left: 40px;
+  margin-top: 0;
+}
+.list{
+  display: flex;
+  list-style: none;
+  margin-left: 73%;
+} 
+nav ul li {
+  height: 80px;
+  float: left;
+  padding-top: 0;
+  font-family: 'Karla', sans-serif;
+  font-size: 12px;
+} 
+nav ul li a {
+  display: block; 
+  padding: 20px;
+  color: rgb(211, 211, 211);
+  text-decoration: none;
+  font-size: 15px;
+} 
+nav ul li:hover {
+  background: white;
+} 
+nav ul li a:hover {
+  color: #912932;
+} 
+.rigthLine{
+  margin-top: 5px;
+  border-right: solid 2px #ac9092;
+}

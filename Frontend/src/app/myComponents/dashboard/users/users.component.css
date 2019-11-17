@@ -1,0 +1,100 @@
+/* Admin */
+.center{
+    text-align: center;
+}
+
+.contenedorAdmin{
+    display: grid;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding-top: 50px;
+  }
+  .titleAdmin{
+    display: grid;
+    width: 80%;
+    height: 200px;
+    padding-top: 5%;
+    margin-left: 1%;
+  
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .titleAdmin > P{
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 3/4;
+    font-family: 'Karla', sans-serif;
+    margin-top: 15px;
+    font-size: 26px;
+    color: white;
+    z-index: 5;
+  }
+  .titleAdmin > img{
+    display: grid;
+    grid-row: 1/3;
+    grid-column: 1/4;
+  }
+  .optionsAdmin{
+    display: grid;
+    width: 80%;
+    height: auto;
+    margin-left: 10%; 
+    margin-bottom: 120px;
+    
+  }
+  .barraInfo{
+    display: grid;
+    width: 100%;
+    height: 60px;
+    background-color: #CCCCCC;
+    margin-bottom: 5px;
+    grid-template-columns: 30% 30% 20% 20%;
+  }
+
+  .barraTitle{
+      display: grid;
+      width: 100%;
+      height: 60px;
+      background-color: #912932;
+      margin-bottom: 5px;
+      grid-template-columns: 30% 30% 20% 20%;
+  }
+  .nombreAdminCreado{
+    display: grid;
+    height: auto;
+    grid-column: 1/2;
+    font-family: 'Karla', sans-serif;
+    font-size: 24px;
+    color: #1F2345;
+    text-align: center;
+    align-items: center;
+  }
+
+  .datos{
+    display: grid;
+    height: auto;
+    font-family: 'Karla', sans-serif;
+    font-size: 24px;
+    color: #1F2345;
+    text-align: center;
+    align-items: center;
+  }
+
+ 
+  .barraInfo > img{
+    display: grid;
+    grid-column: 4/5;
+  }
+  .barraAgregar{
+    display: grid;
+    width: 100%;
+    height: 60px;
+    background-color: #CCCCCC;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  
+  /* fin Admin */
+  

@@ -1,6 +1,5 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from "@angular/forms";
-import {Router} from "@angular/router"
+import { Component, OnInit } from '@angular/core';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -8,32 +7,9 @@ import {Router} from "@angular/router"
 })
 export class LoginComponent implements OnInit {
 
-  valor:boolean = true
-  @Output('cambio') cambiando = new EventEmitter<boolean>()
+  constructor() { }
+
   ngOnInit() {
   }
-
-  capturar(e){
-    this.cambiando.emit(this.valor)
-    this.router.navigate(['/home'])
-  }
-
-
-  
-  constructor(
-    private builder: FormBuilder,
-    private router: Router
-  ) { }
-
-
-  registerForm: FormGroup = this.builder.group({
-    name: ["", Validators.required],
-    email: ["", Validators.required],
-    password: ["", Validators.required]
-  });
-  
-  
-  
-  
 
 }

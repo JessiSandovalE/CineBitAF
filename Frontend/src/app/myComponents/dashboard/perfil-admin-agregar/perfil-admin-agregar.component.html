@@ -1,0 +1,53 @@
+<div class="contenedorGeneral">
+    <div class="titleAdmin center">
+        <p>Contenido</p>
+        <hr>
+    </div>
+
+    <div class="barraAgregar">
+        <img src="../../../assets/img/botones/botonAgregarAdmin.png" width="60px" height="60px">
+    </div>
+        
+    <div  class="barraTitle center">
+                <div class="datos">Nombre</div>
+                <div class="datos">Email</div>
+                <div class="datos">Role</div>
+                <div class="datos">Eliminar</div>
+                <div class="datos">Editar</div>
+
+            </div>   
+        <div class="barraInfo center" *ngFor="let pelicula of listaDePeliculas">
+                <div class="nombreAdminCreado">{{pelicula.title}}</div>
+                <div class="nombreAdminCreado">{{pelicula.genres}}</div>
+                <div class="nombreAdminCreado">{{pelicula.type}}</div>
+                <!-- <div class="datos">{{user.correo}}</div>
+                <div class="datos">{{user.role}}</div> -->
+                <a (click)='borrarPeli(pelicula._id)' >
+                        <img src="../../../assets/img/botones/botonQuitarAdmin.png" width="60px" height="60px" class=" datos center">
+                </a>
+            </div>
+          
+  <!--   <div class="mov">
+        <div class="card" *ngFor='let pelicula of listaDePeliculas'>
+            <div class="imgBx" >
+                <img  [src]="pelicula.poster_path">
+            </div>
+            <div class="details">
+                <div class="botones">
+                    <a routerLink="/perfilAdminAgregar"><img class="botonEditar"
+                        src="../../../assets/img/botones/botonEditarPeli.png" width="50px"
+                            height="50px"></a>
+                    <img class="botonQuitar" src="../../../assets/img/botones/botonQuitarPeli.png" width="50px"
+                        height="50px">
+                </div>
+                <h3>{{pelicula.title}}</h3>
+            </div>
+        </div>
+     
+    </div> -->
+
+</div>
+
+
+
+

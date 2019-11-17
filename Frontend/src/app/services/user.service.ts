@@ -29,8 +29,8 @@ export class UserService {
     console.log(user);
     return this._http.post(this.url, user);
   }
-  deleteUsuarios(id): Observable<any> {
-    return this._http.delete(this.url+"/"+id);
+  deleteUsuarios(_id): Observable<any> {
+    return this._http.delete(this.url+"/"+_id);
   }
 
 

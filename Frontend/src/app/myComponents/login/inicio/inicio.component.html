@@ -1,0 +1,39 @@
+
+<section class="contenido">
+    <video src="../../../assets/video/Glitch n Glow - Scan Effect - Light Bar Scans - Free Footage Light Layer.mp4"
+        class="video" type="video/mp4" loop autoplay muted> </video>
+
+    <div class="parte1Registro">
+        <div class="cuadroSombraRegistro"></div>
+        <div class="cuadroRegistro">
+            <div class="titleRegistro"><img src="../../../assets/img/botones/titleLogo.png"></div>
+
+            <form class="registro" [formGroup]="loginForm" (ngSubmit)="enviar(loginForm.value)">
+
+                <input type="email" placeholder="ejemplo@gmail.com"  class="emailRegistro" #email>
+                <small class="error"
+                    *ngIf="loginForm.get('email').hasError('required') && loginForm.get('email').touched ">Email
+                    requerido</small>
+
+                <input type="password" placeholder="Contraseña" class="passwordRegistro" #contrasena>
+                <small class="error"
+                    *ngIf="loginForm.get('password').hasError('required') && loginForm.get('password').touched ">Contraseña
+                    requerida</small>
+
+                <button class="botonLogin" >Inicia sesión</button>
+                <button class="botonRegister" ><a routerLink="/login/register"
+                        routerLinkActive="active">Regístrate</a></button>
+            </form>
+
+            <button class="botonEnviar" (click)="ValidarUsuario(email.value,contrasena.value)">Iniciar</button>
+        </div>
+    </div>
+
+
+    <div class="parte2Registro">
+        <a routerLink="/Womake/home" routerLinkActive="active" target="_blank">
+            <img src="../../../assets/img/botones/botonEmpresa.png">
+        </a>
+    </div>
+
+</section>

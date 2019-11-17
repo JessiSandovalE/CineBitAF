@@ -1,0 +1,275 @@
+.contenedorInfo{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-rows: repeat(24, 1fr);
+    grid-template-columns: 15% 20% 50% 15% ;
+  }
+  .contenedorInfo > img{
+    display: grid;
+    width: 100%;
+    height: 300px;
+    grid-row: 1/16;
+    grid-column: 1/5;
+    background-color: #1F2345;
+  }
+  .column1{
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-row: 5/24;
+    grid-column: 2/3;
+  
+    grid-template-rows: 380px 70px 200px;
+  }
+  .afichePeli{
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-row: 1/2;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .punctuation{
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-row: 2/3;
+  }
+  .cuadroPunctuation{
+    display: grid;
+    width: 250px;
+    height: 70px;
+    background-color: rgb(66, 66, 66);
+  }
+  .info1{
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-row: 3/4;
+    line-height: 0em;
+  }
+  .info1 > h4{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    color: #1F2345;
+    margin-top: 25px;
+  }
+  .info1 > p{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    color: rgb(117, 117, 117);
+    margin-top: 5px;
+    font-weight: lighter;
+  }
+  .column2{
+    display: grid;
+    width: auto;
+    height: 300px;
+    grid-row: 5/24;
+    grid-column: 3/4;
+  
+    grid-template-rows: 180px 100px 369px;
+  }
+  
+  
+  
+  .parte1{
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-row: 1/2;
+  
+    grid-template-columns: 70% 30%;
+  }
+  .info2{
+    display: grid;
+    grid-column: 1/2;
+  
+    grid-template-rows: 40% 60%;
+  }
+  .titlePeli{
+    display: grid;
+    grid-row: 1/2;
+    font-family: 'Karla', sans-serif;
+    font-size: 32px;
+    color: white;
+    align-items: flex-end;
+    margin-left: 10px;
+  }
+  .contenedorGeneros{
+    display: grid;
+    width: auto;
+    grid-row: 2/3;
+  
+    grid-template-rows: 10px 100px 10px;
+    justify-content: flex-start;
+  }
+  .cuadroGenero{
+    display: grid;
+    width: 120px;
+    height: 40px;
+    grid-row: 2/3;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-left: 10px;
+  }
+  .bitLike{
+    display: grid;
+    grid-column: 2/3;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  
+  
+  .parte2{
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-row: 2/3;
+    padding-left: 15px;
+  }
+  .info3{
+    display: grid;
+    width: 60%;
+    height: 60px;
+  
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 200px 150px;
+  }
+  .fecha{
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    color: rgb(153, 153, 153);
+  }
+  .country{
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    color: #1F2345;
+    font-weight: bold;
+  }
+  .duration{
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    color: #1F2345;
+    font-weight: bold;
+  }
+  
+  
+  
+  .parte3{
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-row: 3/4;
+    background-color: rgb(211, 211, 211);
+  
+    grid-template-rows: 100px 270px;
+  }
+  .categoria{
+    display: grid;
+    grid-row: 1/2;
+  
+    grid-template-columns: 60% 40%;
+  }
+  .categoria > h3{
+    display: grid;
+    grid-column: 1/2;
+    margin-left: 40px;
+    font-family: 'Karla', sans-serif;
+    font-size: 26px;
+    color: #1F2345;
+  }
+  .tipo{
+    display: grid;
+    grid-column: 2/3;
+    width: 160px;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 80px;
+   /*  background-image: url(img/fondoCategoriaTipo.png); */
+    background-position: center;
+    font-family: 'Karla', sans-serif;
+    font-size: 21px;
+    color: #E0E0E0;
+    justify-content: center;
+    align-items: center;
+  }
+  .sinopsis{
+    display: grid;
+    grid-row: 2/3;
+    width: 650px;
+    margin-left: 40px;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    color: rgb(80, 80, 80);
+  }
+  
+  
+  
+  
+  .contenedorMultimedia{
+   display: grid;
+   width: 75%;
+   height: 500px;
+   margin-left: 12%;
+   margin-bottom: 300px;
+   margin-top: 100px;
+  
+   grid-template-rows: 60px 550px;
+   grid-template-columns: 200px 200px auto;
+  }
+  .titleVideo{
+   display: grid;
+   grid-row: 1/2;
+   grid-column: 1/3;
+   background-color: rgb(92, 92, 92);
+  
+   grid-template-columns: 50% 50%;
+  }
+  .titlePeliVideo{
+    display: grid;
+    margin: 0;
+    grid-column: 1/2;
+    background-color: black;
+    font-family: 'Karla', sans-serif;
+    font-size: 26px;
+    color: #E0E0E0;
+    justify-content: center;
+    align-items: center;
+  }
+  .titleTrailer{
+    display: grid;
+    grid-column: 2/3;
+    background-color: #E0E0E0;
+    font-family: 'Karla', sans-serif;
+    font-size: 26px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+  }
+  .optionVideo{
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/4;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+  }
+  .optionVideo > video{
+    display: grid;
+    width: 1050px;
+    height: 500px;
+    background-color: rgb(92, 92, 92);
+  }

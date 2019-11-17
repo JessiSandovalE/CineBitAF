@@ -1,13 +1,21 @@
-'use strict'
-
-//MODULOS NECESARIO
 const express = require('express');
-const router = express.Router(); //manejador de ruts
-const Usuarios = require('../models/usuarioModel'); //modelo estrenos '../modelo/estrenosModelo'
+const router = express.Router(); 
+const bcrypt = require('bcrypt');
+const Usuarios = require('../models/usuarioModel'); 
+
+
 
 //-------------------------------------------------------------------------
 // CREATE - METODO: POST / AGREGAR ESTRENO
 router.post('/',(req, res, next)=>{
+    let body = req.body;
+   
+    let user = new Usuarios({
+        nombre: body.nombre,
+        correo: body.correo,
+        password: bcrypt.hashSync(body.password,10),
+        role: body.role
+    })
     Usuarios.create(req.body)
     .then((usuarios)=>{
         res.send(usuarios);

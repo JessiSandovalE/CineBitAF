@@ -1,0 +1,72 @@
+ /* pelis */
+  
+ .contenedorGeneral{
+   width: 60%;
+   padding-left: 20%;
+   padding-top: 7%;
+ }
+
+
+ .titleAdmin{
+  display: grid;
+  width: 100%;
+  height: 60px;
+  /* background-color: #912932; */
+  margin-bottom: 15px;
+  grid-template-columns: 100%;
+  font-family: 'Karla', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: #1F2345;
+}
+  
+.barraAgregar{
+  display: grid;
+  width: 100%;
+  height: 60px;
+  background-color: #CCCCCC;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+
+ .barraTitle{
+  display: grid;
+  width: 100%;
+  height: 60px;
+  background-color: #912932;
+  margin-bottom: 5px;
+  grid-template-columns: 30% 20% 20% 10% 20%;
+ 
+  }
+
+  .datos{
+    display: grid;
+    height: auto;
+    font-family: 'Karla', sans-serif;
+    font-size: 24px;
+    color: #1F2345;
+    text-align: center;
+    align-items: center;
+  }
+  .barraInfo{
+    display: grid;
+    width: 100%;
+    height: 60px;
+    background-color: #CCCCCC;
+    margin-bottom: 5px;
+    grid-template-columns: 30% 20% 20% 10% 20%;
+  }
+
+    .nombreAdminCreado{
+    display: grid;
+    height: auto;
+    font-family: 'Karla', sans-serif;
+    font-size: 17x;
+    color: #1F2345;
+    text-align: center;
+    align-items: center;
+  }
+
+
+  /* fin pelis */
