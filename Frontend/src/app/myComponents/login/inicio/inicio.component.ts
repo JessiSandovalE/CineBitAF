@@ -48,6 +48,8 @@ export class InicioComponent implements OnInit {
 
     localStorage.setItem("nombreUsuarioLogeado",leido.nombre)
     localStorage.setItem("correoUsuarioLogeado",leido.correo)
+    localStorage.setItem("idUsuarioLogeado",leido._id)
+    localStorage.setItem("imgUsuarioLogeado",leido.imagen)
 
     if (ingresado == leido.password){
 
