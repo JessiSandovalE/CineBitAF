@@ -61,7 +61,7 @@ router
     }
   })
 
-  .delete('/delete/:id', async (req, res) => {
+  .delete('/:id', async (req, res) => {
     try {
       let data = await details.deleteDetail(req.params.id);
       if (!data) res.status(200).json({

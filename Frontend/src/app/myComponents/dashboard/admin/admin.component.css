@@ -1,0 +1,237 @@
+
+
+/* CONTENIDO INCIO ADMIN */
+.contenedorAdmin{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    
+    
+  }
+  .contenedorGeneralSections{
+    display: flex;
+    float: left;
+    padding-top: 3%;
+    width: 80%;
+    height: 650px;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 10%;
+  }
+  
+  .img{
+      border: 0px;
+  }
+  .content{
+    display: flex;
+    width: 300px;
+    height: 600px;
+  
+    display: grid;
+    grid-template-rows: 70px 260px 260px;
+  }
+  .titleContent{
+    display: grid;
+    grid-row: 1/2;
+    font-family: 'Karla', sans-serif;
+    font-weight: lighter;
+    font-size: 28px;
+    justify-content: center;
+    padding-top: 20PX;
+  }
+  .red{
+    color: #912932;
+  }
+  .cuadro1{
+    display: grid;
+    width: 260px;
+    margin-left: 20px;
+    grid-row: 2/3;
+    background-image: url(../../../../assets/img/admin/romboFondo_Rojo.png);
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .cuadro{
+    width: 170px;
+    height: 170px;
+    background-color: #DDDDDD;
+    border-radius: 15px;
+    border: solid 6px #B2B2B2;
+    background-position: center;
+  
+    display: grid;
+    grid-template-rows: 65% 35%;
+    justify-content: center;
+  }
+  .cuadro:hover{
+    background-image: url(../../../../assets/img/admin/lineaPunteada_Blanca.png);
+    color: white;
+  }
+  .cuadro > img{
+    border: none;
+  }
+  .imgPerfil{
+    display: grid;
+    grid-row: 1/2;
+    width: 120px;
+    height: 100px;
+    margin-top: 15px;
+    background-position: center;
+    background-size: contain;
+  }
+  .One{
+    background-image: url(../../../../assets/img/admin/perfil1.png);
+    border-image: none;
+  }
+
+  .One:hover{
+    background-image: url(../../../../assets/img/admin/perfil1_Blanco.png);
+  }
+  .Two{
+    background-image: url(../../../../assets/img/admin/perfil2.png);
+    
+  }
+  .A{
+    background-image: url(../../../../assets/img/admin/lineaPunteada_Roja.png);
+    color: #912932;
+  }
+  div .A:hover{
+    background-color: #912932;
+  }
+  .B:hover{
+    background-color: #912932;
+  }
+  .A:hover img{
+    background-image: url(../../../../assets/img/admin/perfil1_Blanco.png);
+  }
+  .B{
+    background-image: url(../../../../assets/img/admin/lineaPunteada_Roja.png);
+    color: #912932;
+  }
+  .B:hover img{
+    background-image: url(../../../../assets/img/admin/perfil2_Blanco.png);
+  }
+  .cuadro > p{
+    display: grid;
+    grid-row: 2/3;
+    justify-content: center;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+  }
+  .cuadro2{
+    display: grid;
+    width: 260px;
+    margin-left: 20px;
+    grid-row: 3/4;
+    background-image: url(../../../../assets/img/admin/romboFondo_Rojo.png);
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  .blac{
+    color: black;
+  }
+  .cuadro3{
+    display: grid;
+    width: 260px;
+    margin-left: 20px;
+    grid-row: 2/3;
+    background-image: url(../../../../assets/img/admin/romboFondo_Negro.png);
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .cuadro4{
+    display: grid;
+    width: 260px;
+    margin-left: 20px;
+    grid-row: 3/4;
+    background-image: url(../../../../assets/img/admin/romboFondo_Negro.png);
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .C{
+    background-image: url(../../../../assets/img/admin/lineaPunteada_Negra.png);
+    color: black;
+  }
+  .C:hover{
+    background-color: black;
+  }
+  .C:hover img{
+    background-image: url(../../../../assets/img/admin/usuarios1_Blanco.png);
+  }
+  .D{
+    background-image: url(../../../../assets/img/admin/lineaPunteada_Negra.png);
+    color: black;
+  }
+  .D:hover{
+    background-color: black;
+  }
+  .D:hover img{
+    background-image: url(../../../../assets/img/admin/usuarios2_Blanco.png);
+  }
+  .Three{
+    background-image: url(../../../../assets/img/admin/usuarios1.png);
+    border: #DDDDDD;
+  }
+  .Four{
+    background-image: url(../../../../assets/img/admin/usuarios2.png);
+  }
+  
+  
+  
+  .blue{
+    color: #1F2345;
+  }
+  .cuadro5{
+    display: grid;
+    width: 260px;
+    margin-left: 20px;
+    grid-row: 2/3;
+    background-image: url(../../../../assets/img/admin/romboFondo_Azul.png);
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .cuadro6{
+    display: grid;
+    width: 260px;
+    margin-left: 20px;
+    grid-row: 3/4;
+    background-image: url(../../../../assets/img/admin/romboFondo_Azul.png);
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .E{
+    background-image: url(../../../../assets/img/admin/lineaPunteada_Azul.png);
+    color: #1F2345;
+  }
+  .E:hover{
+    background-color: #1F2345;
+  }
+  .E:hover img{
+    background-image: url(../../../../assets/img/admin/contenido1_Blanco.png);
+  }
+  .F{
+    background-image: url(../../../../assets/img/admin/lineaPunteada_Azul.png);
+    color: #1F2345;
+  }
+  .F:hover{
+    background-color: #1F2345;
+  }
+  .F:hover img{
+    background-image: url(../../../../assets/img/admin/contenido2_Blanco.png);
+  }
+  .Five{
+    background-image: url(../../../../assets/img/admin/contenido1.png);
+  }
+  .Six{
+    background-image: url(../../../../assets/img/admin/contenido2.png);
+  }
+  /* FIN CONTENIDO INCIO ADMIN */

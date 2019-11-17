@@ -1,21 +1,21 @@
-'use strict'
+const mongoose = require('mongoose'); 
+const uniqueValidator = require('mongoose-unique-validator');
 
-const mongoose = require('mongoose'); //llamado del modulo mongoose
-
-const Schema = mongoose.Schema; //creador de plantilla de modelo mongoose
+const Schema = mongoose.Schema; 
 
 const usuariosSchema = new Schema({
     nombre: {
-        type:String, required: true
+        type:String,  required: [true,'El nombre es necesario']
     },
     edad:{
-        type: Number, default: 15
+        type: Number, default: 1
     },
     password:{
-        type: String, required : true
+        type: String, required:[true, 'Contraseña es necesario']
     },
     correo:{
-        type:String
+        type:String,
+        unique: true
     },
     role: {
         type: String, default: "user"

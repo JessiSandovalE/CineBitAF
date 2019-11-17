@@ -32,6 +32,13 @@ import { DashboardComponent } from './myComponents/dashboard/dashboard.component
 //Dashboard
 import { AdminProfileComponent } from './myComponents/dashboard/admin-profile/admin-profile.component';
 import { PerfilAdminComponent } from './myComponents/dashboard/perfil-admin/perfil-admin.component';
+import { AdminComponent } from './myComponents/dashboard/admin/admin.component';
+import { AdminNavComponent } from './myComponents/dashboard/admin-nav/admin-nav.component';
+import { UsersComponent } from './myComponents/dashboard/users/users.component';
+import { PerfilAdminAgregarComponent  } from './myComponents/dashboard/perfil-admin-agregar/perfil-admin-agregar.component';
+import { FormUserComponent } from './myComponents/dashboard/form-user/form-user.component';
+import { LateralNavComponent } from './myComponents/dashboard/lateral-nav/lateral-nav.component';
+import { CreateUserComponent } from './myComponents/dashboard/create-user/create-user.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +57,14 @@ import { PerfilAdminComponent } from './myComponents/dashboard/perfil-admin/perf
     RegistroComponent,
     DashboardComponent,
     AdminProfileComponent,
-    PerfilAdminComponent
+    PerfilAdminComponent,
+    AdminComponent,
+    AdminNavComponent,
+    PerfilAdminAgregarComponent,
+    UsersComponent,
+    FormUserComponent,
+    LateralNavComponent,
+    CreateUserComponent
 
   ],
   imports: [

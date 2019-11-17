@@ -1,0 +1,36 @@
+<div class="contenedorAdmin">
+        <div class="titleAdmin center">
+            <p>USUARIOS</p>
+            <img src="../../../assets/img/botones/fondoTitleAdmin.png" width="200%" height="200px">
+        </div>
+
+        
+
+        <div class="optionsAdmin">
+            
+               <div class="barraAgregar">
+                
+                <a [routerLink]="['/dashboard/createUsers']">
+                    <img src="../../../assets/img/botones/botonAgregarAdmin.png" width="60px" height="60px">
+                </a>
+                    </div>
+            <div  class="barraTitle center">
+                <div class="datos">Nombre</div>
+                <div class="datos">Email</div>
+                <div class="datos">Role</div>
+                <div class="datos">Eliminar</div>
+
+            </div>   
+            <div class="barraInfo center" *ngFor="let user of userList.usuarios">
+                <div class="nombreAdminCreado">{{user.nombre}}</div>
+                <div class="datos">{{user.correo}}</div>
+                <div class="datos">{{user.role}}</div>
+                
+                <a (click)='borrarUsuario(user._id)' >
+                        <img src="../../../assets/img/botones/botonQuitarAdmin.png" width="60px" height="60px" class=" datos center">
+                </a>
+            </div>
+          
+            
+        </div>
+    </div>

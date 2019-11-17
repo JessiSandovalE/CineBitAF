@@ -25,6 +25,11 @@ export class contenidoService {
   getContenido(): Observable<any> {
     return this._http.get<any>(this.url);
   }
+
+  borrarContenido(_id){
+    return this._http.delete(`${this.url}/${_id}`)
+  }
+
  /*  crearUsuarios(user):Observable<any> {
     console.log(user);
     return this._http.post(this.url, user);

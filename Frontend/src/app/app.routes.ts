@@ -16,6 +16,10 @@ import { AdminProfileComponent } from './myComponents/dashboard/admin-profile/ad
 import { PerfilAdminComponent } from './myComponents/dashboard/perfil-admin/perfil-admin.component';
 import { UserProfileAvatarComponent } from './myComponents/browse/user-profile-avatar/user-profile-avatar.component';
 import { SelectedPeliComponent } from './myComponents/browse/selected-peli/selected-peli.component';
+import { AdminComponent } from './myComponents/dashboard/admin/admin.component';
+import { UsersComponent } from './myComponents/dashboard/users/users.component';
+import { PerfilAdminAgregarComponent  } from './myComponents/dashboard/perfil-admin-agregar/perfil-admin-agregar.component';
+import { CreateUserComponent } from './myComponents/dashboard/create-user/create-user.component';
 import { from } from 'rxjs';
 
 /* import { PerfilAdminAgregarComponent} from './myComponents/perfil-admin-agregar';
@@ -36,8 +40,11 @@ const APP_ROUTES: Routes =[
         {path:'userAvatar', component: UserProfileAvatarComponent},
     ] },
     {path:'dashboard',component: DashboardComponent, children:[
-        {path:'', component: AdminProfileComponent},
-        {path:'perfil', component:PerfilAdminComponent}
+        {path:'', component: AdminComponent},
+        {path:'perfil', component: PerfilAdminComponent},
+        {path:'users', component: UsersComponent},
+        {path:'movies', component: PerfilAdminAgregarComponent},
+        {path:'createUsers',component:CreateUserComponent}
     ]},
     { path: '**', pathMatch:'full', redirectTo: 'login'},
 

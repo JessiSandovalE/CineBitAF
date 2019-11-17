@@ -1,0 +1,62 @@
+
+/* MENÚ LATERAL */
+.lateralMenu{
+    margin-top: 4%;
+    width: 15%;
+    height: 650px;
+    background-color: #1F2345;
+    position: fixed;
+  }
+  .Section{
+    width: auto;
+    height: 180px;
+    line-height: 2em;
+  }
+  .Section >h4{
+    display: flex;
+    width: auto;
+    height: 62px;
+    background-color: rgb(24, 26, 44);
+    font-family: 'Karla', sans-serif;
+    font-size: 26px;
+    color: #912932;
+    font-weight: lighter;
+    align-items: center;
+    padding-left: 30px;
+    margin: auto;
+  }
+  .line{
+    border-bottom: solid 1px rgb(223, 223, 223);
+  }
+  .Section >p{
+    display: flex;
+    width: auto;
+    height: 55px;
+    margin: auto;
+    font-family: 'Karla', sans-serif;
+    font-size: 21px;
+    color: rgb(221, 221, 221);
+    font-weight: lighter;
+    align-items: center;
+    padding-left: 30px;
+  }
+  .Section >p:hover{
+    color: #1F2345;
+     background-color: white;
+    
+  }
+
+  a{
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+}
+
+
+
+  a:hover {
+    background-color: white;
+    color: #1F2345;
+  }
+
+
+  /* fFIN MENÚ LATERAL */

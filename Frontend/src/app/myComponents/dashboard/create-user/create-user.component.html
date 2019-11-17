@@ -1,0 +1,32 @@
+ <div class="container">
+    <h2>Crear Usuario</h2>
+    
+     <form [formGroup]="userRegister" (ngSubmit)="send(userRegister.value)" class="createSong center">
+        <label class="mtop white">
+            Nombre:  
+            <input type="text" formControlName="nombre" class="i-form">
+        </label>
+        <br>
+        
+        <label class="mtop white">
+            email:  
+            <input type="text" formControlName="correo" class="i-form">
+        </label>
+        <br>
+    
+        <label class="mtop white">
+            Password:
+            <input type="text" formControlName="password" class="i-form">
+        </label>
+        <br>
+    
+        <label  class="mtop white">
+            Rol:
+            <input type="text" formControlName="role" class="i-form">
+        </label>
+        <br>
+        <br>
+        <button type="submit" class="btn mtop">Crear</button>    
+    </form>
+
+ </div>
