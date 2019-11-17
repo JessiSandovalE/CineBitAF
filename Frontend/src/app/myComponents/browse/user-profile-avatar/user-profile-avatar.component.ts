@@ -28,6 +28,8 @@ export class UserProfileAvatarComponent implements OnInit {
       let newImg = source.src;
       console.log(newImg)
       imgActual.setAttribute("src", newImg);
+      let nav  = document.getElementById('imgNav');
+      nav.setAttribute("src", newImg);
   
     }
     //metodo que consume el servicio update, para reflejarlo en la db
