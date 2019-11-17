@@ -17,7 +17,7 @@
 
         <div class="cuadro2">
             <div class="cuadro B">
-               <a href="" >
+                <a [routerLink]="['/']">
                     <div class="imgPerfil Two"></div>
                </a>
                 <!-- <p>Cerrar sesión</p> -->
@@ -31,15 +31,24 @@
 
         <div class="cuadro3">
             <div class="cuadro C">
-                <img class="imgPerfil Three">
-               <!--  <p>Regulares</p> -->
+
+                    <a [routerLink]="['/dashboard/users']">
+
+                        <div class="imgPerfil Three"></div>
+                <!-- <img class="imgPerfil Three"> -->
+                </a>
+               <!--  <p>Ver Usuarios</p> -->
             </div>
         </div>
 
         <div class="cuadro4">
             <div class="cuadro D">
-                <img class="imgPerfil Four">
-               <!--  <p>Admin</p> -->
+                <a [routerLink]="['/dashboard/createUsers']">
+                    <div class="imgPerfil Four"></div>
+
+                </a>
+                <!-- <img class="imgPerfil Four"> -->
+               <!--  <p>Crear Usuarios</p> -->
             </div>
         </div>
     </div>
@@ -50,15 +59,21 @@
 
         <div class="cuadro5">
             <div class="cuadro E">
-                <img class="imgPerfil Five">
-             <!--    <p>Películas</p> -->
+                <a [routerLink]="['/dashboard/movies']">
+                    <div class="imgPerfil Five"></div>
+                </a>
+               <!--  <img class="imgPerfil Five"> -->
+             <!--    <p>Ver Películas</p> -->
             </div>
         </div>
 
         <div class="cuadro6">
             <div class="cuadro F">
-                <img class="imgPerfil Six">
-                <!-- <p>Series</p> -->
+                <a href="">
+                    <div class="imgPerfil Six"></div>
+                </a>
+                <!-- <img class="imgPerfil Six"> -->
+                <!-- <p>Crear Contenido</p> -->
             </div>
         </div>
     </div>
