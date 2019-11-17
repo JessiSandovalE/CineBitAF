@@ -1,3 +1,4 @@
+import { Usuarios } from './../module/user.module';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
@@ -31,6 +32,12 @@ export class UserService {
   }
   deleteUsuarios(id): Observable<any> {
     return this._http.delete(this.url+"/"+id);
+  }
+  /* Get by ID */
+  getUsuarioID(id): Observable<any>{
+    return this._http.get(this.url+"/"+id).pipe(
+      map(this.extractData)
+    );
   }
 
 
