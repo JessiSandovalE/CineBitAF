@@ -1,0 +1,113 @@
+/* PARTE 1 */
+.perfil{
+    display: grid;
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    grid-template-columns: 40% 60%;
+ /*    margin-top: 50px; */
+  }
+  .parte1{
+    display: grid;
+    grid-column: 1/2;
+  
+    grid-template-rows: repeat(10, 60px);
+    grid-template-columns: repeat(8, 86px);
+  }
+  .parte1 > img{
+    display: grid;
+    grid-row: 3/7;
+    grid-column: 2/6;
+  }
+  .parte1 > p{
+    display: grid;
+    grid-row: 3/5;
+    grid-column: 3/5;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-family: 'Karla', sans-serif;
+    font-size: 52px;
+    color: #CCCCCC;
+    z-index: 5;
+  }  
+  .imgPerfil{
+    display: grid;
+    width: 160px;
+    height: 160px;
+    grid-row: 4/8;
+    grid-column: 3/8;
+    margin-top: 40px;
+    margin-left: 10px;
+    justify-content: center;  
+    grid-template-rows: repeat(10, 12px);
+    grid-template-columns: repeat(10, 12px);
+  }
+  .sombraImgPerfil{
+    display: grid;
+    width: 150px;
+    height: 150px;
+    grid-row: 2/10;
+    grid-column: 1/9;
+    background-color: #1F202B;
+    border-radius: 150px;
+    /* margin-top: 2px;  */
+  }
+  .imgAvatar{
+    display: grid;
+    width: 150px;
+    height: 150px;
+    grid-row: 1/9;
+    grid-column: 1/9;
+    background-color: #CCCCCC;
+    border-radius: 150px;
+  }
+ 
+  .editar{
+    border:none;
+    background-color:#912932;
+    color: white;
+    width: 180px;
+    padding: 15px 35px;
+    margin-left: 200px;
+    margin-top: 350px;
+    cursor: pointer;
+  }
+  .imgFondoBotonEditar{
+    width: 200px;
+    height: 200px;
+    background-color: #1F202B;
+}
+/* FIN PARTE 1 */
+
+/* PARTE 3 */
+.parte3{
+    grid-column: 2/3;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #CCCCCC;
+    justify-content: center;
+  }
+  .imgUser{
+    border-radius: 50%;
+    display: inline;
+    margin-left: 100px; 
+    cursor: pointer;
+  }
+  .btnx{
+    border:none;
+    background-color:transparent;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    padding-top: 50px;
+  }
+  .btnok{
+    border:none;
+    background-color:#1F2345;
+    color: white;
+    padding: 15px 35px;
+    margin-left: 80%;
+    margin-top: 40px;
+    cursor: pointer;
+  }
+  /* FIN PARTE 3 */
