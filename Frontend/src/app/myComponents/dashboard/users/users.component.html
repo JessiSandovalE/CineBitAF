@@ -11,23 +11,24 @@
                <div class="barraAgregar">
                 
                 <a [routerLink]="['/dashboard/createUsers']">
-                    <img src="../../../assets/img/botones/botonAgregarAdmin.png" width="60px" height="60px">
+                    <img src="../../../assets/img/botones/botonAgregarAdminAzul.png" width="50px" height="50px">
                 </a>
                     </div>
             <div  class="barraTitle center">
                 <div class="datos">Nombre</div>
                 <div class="datos">Email</div>
                 <div class="datos">Role</div>
-                <div class="datos">Eliminar</div>
+                <div class="datos">Editar / Eliminar</div>
 
             </div>   
             <div class="barraInfo center" *ngFor="let user of userList.usuarios">
                 <div class="nombreAdminCreado">{{user.nombre}}</div>
-                <div class="datos">{{user.correo}}</div>
-                <div class="datos">{{user.role}}</div>
+                <div class="datos2">{{user.correo}}</div>
+                <div class="datos2">{{user.role}}</div>
                 
                 <a (click)='borrarUsuario(user._id)' >
-                        <img src="../../../assets/img/botones/botonQuitarAdmin.png" width="60px" height="60px" class=" datos center">
+                        <img src="../../../assets/img/botones/botonEditarAdmin.png" width="45px" height="45px" class="botones">
+                        <img src="../../../assets/img/botones/botonQuitarAdmin.png" width="70px" height="50px" class="botones">
                 </a>
             </div>
           

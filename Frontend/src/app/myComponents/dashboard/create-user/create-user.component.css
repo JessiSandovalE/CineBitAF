@@ -1,6 +1,58 @@
 .container{
+    display: grid;
     width: 100%;
     height: auto;
-    padding-top: 10%;
-    padding-left: 15%;
+    margin: auto;
+    padding-top: 140px;
+    background-color: #912932;
+}
+h2{
+    display: grid;
+    width: 40%;
+    height: 72px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+    font-size: 21px;
+    color: #912932;
+}
+form{
+    margin-top: 20px;
+    height: auto;
+    margin-bottom: 80px;
+}
+label{
+    display: flex;
+    justify-content: center;
+}
+input{
+   width: 40%;
+   height: 40px;
+/*    margin-left: auto; */
+   background-color: #E5E5E5; 
+   font-family: 'Karla', sans-serif;
+   font-size: 21px;
+   color: rgb(37, 37, 37);
+   text-align: center;
+   border-radius: 20px;
+   border-style: none;
+   margin-top: 10px;
+}
+.botonOk{
+    width: 200px;
+    height: 100px;
+    margin-left: 67%;
+    margin-top: 20px;
+    background-image: url(../../../../assets/img/botones/botonOkFormAgregarAdmin.png);
+    background-position: center;
+    background-size: cover;
+    border-style: none;
+    background-color: #912932;
+    font-family: 'Karla', sans-serif;
+    font-size: 26px;
+    font-weight: bolder;
+    color: #912932;
 }
