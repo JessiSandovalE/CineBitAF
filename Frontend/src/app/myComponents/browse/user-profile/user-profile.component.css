@@ -11,6 +11,7 @@
     display: grid;
     grid-column: 1/2;
     background-color: #1F2345;
+    padding-top: 84px;
   
     grid-template-rows: repeat(10, 60px);
     grid-template-columns: repeat(8, 86px);
@@ -41,7 +42,7 @@
     height: 160px;
     grid-row: 4/8;
     grid-column: 3/8;
-    margin-top: 40px;
+    margin-top: 48px;
     margin-left: 10px;
     justify-content: center;
   
@@ -70,12 +71,12 @@
  .contenedorEliminar{
      display: grid;
      width: 250px;
-     height: 100px;
-    /*  background-image: url(../../../assets/img/botones/rayasBlancas.png); */
+     height: 120px;
+     background-image: url(../../../../assets/img/botones/rayasBlancas.png);
      background-position: center;
      grid-row: 10/11;
      grid-column: 3/6;
-     margin-top: 40PX;
+     margin-top: 30PX;
 
      grid-template-rows: auto auto;
      justify-content: center;
@@ -84,14 +85,14 @@
     display: grid;
     grid-row: 1/3;
     border:none;
-    margin-top: 20px;
-    background-color:#912932;
-    width: 180px;
-    height: 60px;
+    margin-top: 28px;
+    background-color:#CCCCCC;
+    width: 200px;
+    height: 54px;
     cursor: pointer;
     align-items: center;
     font-family: 'Karla', sans-serif;
-    color: white;
+    color: #1F2345;
     font-size: 21px;
     font-weight: lighter;
   }
@@ -103,15 +104,41 @@
 /* FIN PARTE 1 */
 
 
+
+
 /* PARTE 2 MIO */
   .parte2{
     display: grid;
     grid-column: 2/3;
     padding-top: 120px;
-    padding-bottom: 80px;
+    padding-bottom: 0px;
     background-color: #CCCCCC;
 
-    grid-template-rows: 10px 420px 20px 120px;
+    grid-template-rows: 150px 320px 60px 120px;
+  }
+  .botonCerrarSesion{
+    display: grid;
+    width: 240px;
+    height: 80px;
+    grid-row: 1/2;
+    background-image: url(../../../../assets/img/botones/rayasAzulesBoton.png);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    margin-left: -10px;
+  }
+  .botonCerrarSesion > p{
+    display: grid;
+    width: 180px;
+    height: 50px;
+    background-color: #912932;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Karla', sans-serif;
+    color: #CCCCCC;
+    font-size: 24px;
+    font-weight: lighter;
   }
 .datos{
     display: grid;
@@ -119,14 +146,21 @@
     grid-row: 2/3;
     margin-left: 20%;
 
-    grid-template-rows: repeat(10, 40px);
+    grid-template-rows: repeat(9, 30px);
+    grid-template-columns: 50% 50%;
   }
 .datoName{
     display: grid;
     grid-row: 2/4;
-    height: 80px;
-    line-height: 1.5;
-    align-items: center;
+    height: 60px;
+/*     line-height: 0em; */
+  /*   align-items: center; */
+}
+.red{
+  color: #912932;
+  font-family: 'Karla', sans-serif;
+    font-size: 20px;
+ /*    line-height: 0em; */
 }
 .datoName > p{
     display: grid;
@@ -134,17 +168,27 @@
     width: 60%;
     font-family: 'Karla', sans-serif;
     font-size: 20px;
+/*     line-height: 0em; */
 }
 .datoPassword{
     display: grid;
     grid-row: 5/7;
+    width: 40%;
 }
 .datoPassword > p{
     display: grid;
     grid-row: 2/3;
-    width: 60%;
+/*     width: 60%; */
     font-family: 'Karla', sans-serif;
     font-size: 20px;
+}
+.Ojitocuadro{
+  display: grid;
+  width: 60px;
+  height: 56px;
+  grid-row: 5/7;
+  padding-top: 5px;
+  background-color: #CCCCCC;
 }
 .datoEmail{
     display: grid;
@@ -181,10 +225,11 @@
     grid-row: 1/5;
     grid-column: 1/4;
     padding-left: 30px;
-    padding-top: 15px;
+/*     padding-top: 15px; */
     background-color: #1F2345;
     font-family: 'Karla', sans-serif;
-    font-size: 26px;
+    font-size: 24px;
     color: #CCCCCC;
     line-height: 1.0;
+    align-items: center;
 }

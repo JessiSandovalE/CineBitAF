@@ -6,10 +6,7 @@
                     <div class="imgAvatar">
                         <a>
                             <img src="../../../assets/img/avatars/avatar3.png" width="152px" height="152px">
-                        
-                        
                         </a>
-                            
                     </div>
                 </div>
               <img src="../../../assets/img/botones/fondoImgPerfil.png" width="400px" height="400px">
@@ -17,17 +14,17 @@
 
 
     <div class="parte4">
-        <div><button class="btnx"><a routerLink="/browse/user" routerLinkActive="active"><img src="../../../assets/img/botones/botonQuitarPeli.png" width="50px" height="50px"></a></button></div>
+        <div><button class="btnx"><a routerLink="/browse/user" routerLinkActive="active"><img src="../../../../assets/img/botones/botonQuitarCuadrado.png" width="60px" height="60px"></a></button></div>
 
     <form [formGroup]=userForm (ngSubmit)="enviar (userForm.value)">
         <h4>NOMBRE USUARIO</h4>
-        <input formControlName="name" type="text" placeholder="Username"> <br>
+        <input formControlName="name" type="text" placeholder="Nombre Usuario"> <br>
         <h4>CONTRASEÑA</h4>
-        <input formControlName="password" type="password" placeholder="Password"><br>
+        <input formControlName="password" type="password" placeholder="Contraseña"><br>
         <h4>EMAIL</h4>
-        <input formControlName="email" type="email" placeholder="email">
+        <input formControlName="email" type="email" placeholder="Email">
 
-        <button [disabled]="userForm.invalid" type="submit" class="change">OK</button>
+        <button [disabled]="userForm.invalid" type="submit" class="change"><p>OK</p></button>
 
     </form>
 </div>

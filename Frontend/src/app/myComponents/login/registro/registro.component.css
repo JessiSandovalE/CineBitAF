@@ -100,20 +100,23 @@
     grid-column: 1/2;
     grid-row: 4/5;
     margin-left: 15px;
-    background-image: url(../../../../assets/img/botones/fondoBotonRegistrarse.png);
+    background-image: url(../../../../assets/img/botones/fondoBotonLogin.png);
     background-size: contain;
-    color: #B43B3E;
     color: #3D132B;
   }
   .botonLogin > a{
-    color: #B43B3E;
+    color: #3D132B;
+    text-decoration: none;
   }
   .botonRegister{
     grid-column: 4/5;
     margin-right: 0px;
-    background-image: url(../../../../assets/img/botones/fondoBotonLogin.png);
+    background-image: url(../../../../assets/img/botones/fondoBotonRegistrarse.png);
     background-size: contain;
-    color: #3D132B;
+    color: #B43B3E;
+  }
+  .botonRegister > a{
+    color: #B43B3E;
   }
   .botonEnviar{
     display: grid;
@@ -132,12 +135,15 @@
   .parte2Registro{
     display: grid;
     grid-column: 2/3;
+  }
+  .parte2Registro > a{
+    display: grid;
+    grid-column: 2/3;
   
     grid-template-rows: repeat(7, 95px);
     padding-left: 155px;
-  }
-  
-  .parte2Registro > img{
+    }
+  .parte2Registro > a > img{
   display: grid;
   grid-row: 6/7;
   }

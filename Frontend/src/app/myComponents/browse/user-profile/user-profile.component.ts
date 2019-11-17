@@ -7,7 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserProfileComponent implements OnInit {
 
-  constructor() { }
+/*   mostrarContrasena(){
+    var tipo = document.getElementById("password");
+    if(tipo.type == "password"){
+        tipo.type = "text";
+    }else{
+        tipo.type = "password";
+    }
+ } */
+ 
+  constructor() {}
 
   ngOnInit() {
   }
