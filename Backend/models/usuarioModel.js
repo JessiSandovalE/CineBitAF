@@ -21,7 +21,7 @@ const usuariosSchema = new Schema({
         type: String, default: "user"
     },
     imagen: {
-        type: String
+        type: String, default: "../../../assets/img/avatars/default.jpeg"
     }
 
 });
