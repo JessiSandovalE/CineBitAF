@@ -1,6 +1,7 @@
 let express = require('express');
 let router = express.Router();
 let details = require('../controllers/detailsController');
+const peliculas=require('../models/detailModel');
 
 /* GET users listing. */
 router
@@ -75,4 +76,37 @@ router
     }
   })
 
+  //filtro por género
+  .get('/genres/:genres', (req, res, next)=>{
+    
+    peliculas.find({genres:req.params.genres})
+    .then((genres)=>{
+      res.statusCode=200;
+      res.setHeader('Content-Type','application/json');
+      res.json(genres);
+    }, (error)=>next(error))
+    .catch((error)=>next(error));
+  })
+  //filtro por tipo
+  .get('/type/:type', (req, res, next)=>{
+    
+    peliculas.find({type:req.params.type})
+    .then((types)=>{
+      res.statusCode=200;
+      res.setHeader('Content-Type','application/json');
+      res.json(types);
+    }, (error)=>next(error))
+    .catch((error)=>next(error));
+  })
+   //filtro por favorito
+   .get('/favorite/:fav', (req, res, next)=>{
+    
+    peliculas.find({favorite:req.params.fav})
+    .then((types)=>{
+      res.statusCode=200;
+      res.setHeader('Content-Type','application/json');
+      res.json(types);
+    }, (error)=>next(error))
+    .catch((error)=>next(error));
+  })
 module.exports = router;

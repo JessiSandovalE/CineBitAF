@@ -42,6 +42,9 @@ import { CreateUserComponent } from './myComponents/dashboard/create-user/create
 import { EditUserComponent } from './myComponents/dashboard/edit-user/edit-user.component';
 import { CreateContentComponent } from './myComponents/dashboard/create-content/create-content.component';
 import { SearchComponent } from './myComponents/browse/search/search.component';
+import { BitLikeComponent } from './myComponents/browse/bit-like/bit-like.component';
+import { SelectedSerieComponent } from './myComponents/browse/selected-serie/selected-serie.component';
+import { SelectedVideoCapComponent } from './myComponents/browse/selected-video-cap/selected-video-cap.component';
 
 @NgModule({
   declarations: [
@@ -70,8 +73,10 @@ import { SearchComponent } from './myComponents/browse/search/search.component';
     CreateUserComponent,
     EditUserComponent,
     CreateContentComponent,
-    SearchComponent
-
+    SearchComponent,
+    BitLikeComponent,
+    SelectedSerieComponent,
+    SelectedVideoCapComponent
   ],
   imports: [
     BrowserModule,

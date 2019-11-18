@@ -1,17 +1,17 @@
-<div class="contenedorInfo">
+<div class="contenedorInfo"*ngFor='let pelicula of peliculas'>
     <img>
 
 
-    <div class="column1">
-        <div class="afichePeli"><img src="../../../../assets/img/historia/historia2.jpg" width="250px" height="340px"></div>
+    <div class="column1" >
+        <div class="afichePeli"><img [src]="pelicula.poster_path"  width="250px" height="340px"></div>
 
         <div class="punctuation">
-            <div class="cuadroPunctuation"></div>
+            <div class="cuadroPunctuation">Puntuacion: {{pelicula.vote_average}}</div>
         </div>
 
         <div class="info1">
             <h4>Director</h4>
-            <p>Lorem Inpsum</p>
+            <p>{{pelicula.director}}</p>
 
             <h4>Reparto</h4>
             <p>Cristina Aguilera</p>
@@ -24,36 +24,30 @@
     <div class="column2">
         <div class="parte1">
             <div class="info2">
-                <div class="titlePeli">FRIDA</div>
+                <div class="titlePeli">{{pelicula.title}}</div>
 
                 <div class="contenedorGeneros">
-                    <div class="cuadroGenero">Histórico</div>
-                    <div class="cuadroGenero">Drama</div>
+                    <div class="cuadroGenero">{{pelicula.genres}}</div>
+                   
                 </div>
             </div>
-            <div class="bitLike"><img src="../../../../assets/img/botones/botonBitLike.png" width="120px" height="120px"></div>
+            <div class="bitLike" (click)="Like(pelicula)"><img src="../../../../assets/img/botones/botonBitLike.png" width="120px" height="120px"></div>
         </div>
 
         <div class="parte2">
             <div class="info3">
-                <div class="fecha">Octubre xx, 2002</div>
-                <div class="country">México</div>
-                <div class="duration">2h30m</div>
+                <div class="fecha">Fecha: {{pelicula.release_date}}</div>
+                <div class="country">Pais: {{pelicula.release_date}}</div>
+                <div class="duration">Duracion: {{pelicula.runtime}}</div>
             </div>
         </div>
 
         <div class="parte3">
             <div class="categoria">
                 <h3>SINOPSIS</h3>
-                <div class="tipo">Película</div>
+                <div class="tipo">{{pelicula.type}}</div>
             </div>
-            <div class="sinopsis">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-                a galley of type and scrambled it to make a type specimen book. It has survived not only five
-                centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
-                more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
-                Ipsum.</div>
+            <div class="sinopsis">{{pelicula.overview}}</div>
         </div>
     </div>
 </div>
@@ -61,10 +55,10 @@
 <div class="contenedorMultimedia">
     <div class="titleVideo">
         <div class="titlePeliVideo">Película</div>
-        <div class="titleTrailer">Trailer</div>
+        <div class="titleTrailer">Trailers</div>
     </div>
 
     <div class="optionVideo">
-        <video></video>
+       <iframe width="1050" height="500" [src]="GetEmbedUrl()" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
     </div>
 </div>

@@ -30,6 +30,24 @@ export class contenidoService {
     return this._http.delete(`${this.url}/${_id}`)
   }
 
+/* Metodo GET por ID*/
+getContenidoid(id): Observable<any>{
+  return this._http.get(this.url+"/"+id).pipe(
+    map(this.extractData));
+}
+
+
+ /* Método GET para filtrar por Género */
+ getGenres(genre):Observable<any>{
+  return this._http.get<any>(this.url+"/genres/"+genre)
+}
+
+
+ /* Método GET para filtrar por favorito */
+ getFav(fav):Observable<any>{
+  return this._http.get<any>(this.url+"/favorite/true")
+}
+
 
  /*  crearUsuarios(user):Observable<any> {
     console.log(user);
@@ -56,6 +74,20 @@ export class contenidoService {
       catchError(this.handleError<any>('updateUser'))
     );
   } */
+
+  updateContenidoLike (id, contenido): Observable<any> {
+
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type':  'application/json'
+      })
+    };
+
+    return this._http.put(this.url+ '/edit/' + id, JSON.stringify(contenido), httpOptions).pipe(
+      tap(_ => console.log(`Contenido actualizado con el id=${id}`)),
+      catchError(this.handleError<any>('updateUser'))
+    );
+  }
 
   private handleError<T> (operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {

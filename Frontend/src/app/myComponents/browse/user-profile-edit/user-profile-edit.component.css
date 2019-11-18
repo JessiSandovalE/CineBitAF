@@ -2,9 +2,10 @@
 .perfil{
     display: grid;
     width: 100%;
-    height: 560px;
+    height: 580px;
     background-color: #FFFFFF;
     grid-template-columns: 40% 60%;
+    padding-top: 24px;
 /*     margin-top: 60px; */
   }
   .parte1{
@@ -14,7 +15,12 @@
     grid-template-rows: repeat(8, 90px);
     grid-template-columns: repeat(8, 86px);
   }
-  .parte1 > img{
+ /*  .parte1 > img{
+    display: grid;
+    grid-row: 3/7;
+    grid-column: 2/6;
+  } */
+  .parte1 > a{
     display: grid;
     grid-row: 3/7;
     grid-column: 2/6;
@@ -36,7 +42,7 @@
     height: 160px;
     grid-row: 4/8;
     grid-column: 3/8;
-    margin-top: 40px;
+    margin-top: 18px;
     margin-left: 10px;
     justify-content: center;
   
@@ -108,24 +114,40 @@
     padding-top: 50px;
     padding-bottom: 10px;
     background-color: #CCCCCC;
-    justify-content: center;
-    text-align: center;
+/*     justify-content: center; */
+/*     text-align: center; */
   }
   .btnx{
-      width: 80px;
+      width: 82px;
 border-style: none;
 background-color: #CCCCCC;
 padding-top: 50px;
+padding-left: 25px;
+  }
+  .btnx > img{
+    margin-left: 20px;
+  }
+  form{
+    display: grid;
+    width: 70%;
+/*     margin-top: 40px; */
+    text-align: center;
+    margin-left: 14%;
   }
   .parte4 input[type=text], input[type=password], input[type=email]{
-    padding: 15px 70px;
-    margin: 10px;
-    margin-left: 10%;
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    margin: 10px 20px;
+    margin-left: 18%;
+    border-radius: 20px;
   }
   .parte4 h4{
     font-family: 'Karla', sans-serif;
-    font-size: 26px;
+    font-size: 24px;
+    font-weight: lighter;
     color: #9A5259;
+    margin-top: 10px;
   }
   .delete{
     border:none;
@@ -139,11 +161,30 @@ padding-top: 50px;
   }
   .change{
     border:none;
-    background-color:#1F2345;
+    background-color:#CCCCCC;
+    width: 200px;
+    height: 80px;
+    background-image: url(../../../../assets/img/botones/rayasAzulesBoton.png);
+    background-position: center;
+    background-size: 120%;
     color: white;
+
+/*     margin-left: 400PX;
+    margin-top: 100px; */
+
     padding: 15px 35px;
     margin-left: 500PX;
     /* margin-top: 50px; */
+
     cursor: pointer;
+  }
+  .change > p{
+    background-color: #1F2345;
+    width: 140px;
+    height: 40px;
+    margin: auto;
+    padding-top: 10px;
+    font-family: 'Karla', sans-serif;
+    font-size: 26px;
   }
 /* FIN PARTE 4 */

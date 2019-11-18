@@ -45,7 +45,7 @@
                     <option value="Drama">Drama</option>
                     <option value="Anime">Anime</option>
                     <option value="Comedia">Comedia</option>
-                    <option value="Mujeres en la historia">Mujeres en la historia</option>
+                    <option value="Mujeres en la historia">Histórico</option>
                 </select>
             </div>
 
@@ -61,7 +61,7 @@
             <div class="cajita">
                 <img src="../../../assets/img/botones/fondoFiltro.png" width="90px" height="80px">
                 <select name="Tipo">
-                    <option selected>Genero</option>
+                    <option selected>Tipo</option>
                     <option value="Pelicular">Pelicula</option>
                     <option value="Serie">Serie</option>
                 </select>
@@ -84,7 +84,7 @@
 
             <div class="contenedorGenero">
                 <img src="../../../assets/img/botones/cuadradoFondoGenero.png" width="500px" height="500px">
-                <div class="titleGenero">HISTORIA</div>
+                <div class="titleGenero">ROMANCE</div>
 
                 <div class="cont-slide">
                     <button class="btn" (click)="boton1(display)">&#10094;</button>
@@ -95,7 +95,7 @@
                                 <img src="">
                                 <a> <img width="200px" height="300px" [src]="genero.img" />
                                     <br />
-                                    <h3 class="details">Titulo</h3>
+                                    <!-- <h3 class="details">Titulo</h3> -->
                                 </a>
                             </div>
                         </div>
@@ -104,7 +104,7 @@
                             <div class="sli" *ngFor="let genero of slide1">
                                 <a><img width="200px" height="300px" [src]="genero.img" />
                                     <br />
-                                    <h3 class="details">Titulo</h3>
+                        <!--             <h3 class="details">Titulo</h3> -->
                                 </a>
                             </div>
                         </div>
@@ -118,27 +118,27 @@
 
             <div class="contenedorGenero">
                 <img src="../../../assets/img/botones/cuadradoFondoGenero.png" width="500px" height="500px">
-                <div class="titleGenero">ROMANCE</div>
+                <div class="titleGenero">DRAMA</div>
 
                 <div class="cont-slide">
                     <button class="btn" (click)="boton12(display)">&#10094;</button>
 
                     <div class="mySlides">
-                        <div *ngIf="isValid">
+                        <div *ngIf="isValid2">
                             <div class="sli" *ngFor="let genero of slide2">
                                 <img src="">
                                 <a> <img width="200px" height="300px" [src]="genero.img" />
                                     <br />
-                                    <h3 class="details">Titulo</h3>
+                                  <!--   <h3 class="details">Titulo</h3> -->
                                 </a>
                             </div>
                         </div>
 
-                        <div *ngIf="noisValid">
+                        <div *ngIf="noisValid2">
                             <div class="sli" *ngFor="let genero of slide12">
                                 <a ><img width="200px" height="300px" [src]="genero.img" />
                                     <br />
-                                    <h3 class="details">Titulo</h3>
+                               <!--      <h3 class="details">Titulo</h3> -->
                                 </a>
                             </div>
                         </div>
@@ -152,27 +152,27 @@
 
             <div class="contenedorGenero">
                 <img src="../../../assets/img/botones/cuadradoFondoGenero.png" width="500px" height="500px">
-                <div class="titleGenero">DRAMA</div>
+                <div class="titleGenero">ANIME</div>
 
                 <div class="cont-slide">
                     <button class="btn" (click)="boton13(display)">&#10094;</button>
 
                     <div class="mySlides">
-                        <div *ngIf="isValid">
+                        <div *ngIf="isValid3">
                             <div class="sli" *ngFor="let genero of slide3">
                                 <img src="">
                                 <a> <img width="200px" height="300px" [src]="genero.img" />
                                     <br />
-                                    <h3 class="details">Titulo</h3>
+                            <!--         <h3 class="details">Titulo</h3> -->
                                 </a>
                             </div>
                         </div>
 
-                        <div *ngIf="noisValid">
+                        <div *ngIf="noisValid3">
                             <div class="sli" *ngFor="let genero of slide13">
                                 <a ><img width="200px" height="300px" [src]="genero.img" />
                                     <br />
-                                    <h3 class="details">Titulo</h3>
+                                <!--     <h3 class="details">Titulo</h3> -->
                                 </a>
                             </div>
                         </div>
@@ -186,27 +186,27 @@
 
             <div class="contenedorGenero">
                 <img src="../../../assets/img/botones/cuadradoFondoGenero.png" width="500px" height="500px">
-                <div class="titleGenero">ANIME</div>
+                <div class="titleGenero">COMEDIA</div>
 
                 <div class="cont-slide">
                     <button class="btn" (click)="boton14(display)">&#10094;</button>
 
                     <div class="mySlides">
-                        <div *ngIf="isValid">
+                        <div *ngIf="isValid4">
                             <div class="sli" *ngFor="let genero of slide4">
                                 <img src="">
                                 <a> <img width="200px" height="300px" [src]="genero.img" />
                                     <br />
-                                    <h3 class="details">Titulo</h3>
+                               <!--      <h3 class="details">Titulo</h3> -->
                                 </a>
                             </div>
                         </div>
 
-                        <div *ngIf="noisValid">
+                        <div *ngIf="noisValid4">
                             <div class="sli" *ngFor="let genero of slide14">
                                 <a><img width="200px" height="300px" [src]="genero.img" />
                                     <br />
-                                    <h3 class="details">Titulo</h3>
+                          <!--           <h3 class="details">Titulo</h3> -->
                                 </a>
                             </div>
                         </div>
@@ -220,27 +220,27 @@
 
             <div class="contenedorGenero">
                 <img src="../../../assets/img/botones/cuadradoFondoGenero.png" width="500px" height="500px">
-                <div class="titleGenero">COMEDIA</div>
+                <div class="titleGenero">HISTÓRICO</div>
 
                 <div class="cont-slide">
                     <button class="btn" (click)="boton15(display)">&#10094;</button>
 
                     <div class="mySlides">
-                        <div *ngIf="isValid">
+                        <div *ngIf="isValid5">
                             <div class="sli" *ngFor="let genero of slide5">
                                 <img src="">
                                 <a > <img width="200px" height="300px" [src]="genero.img" />
                                     <br />
-                                    <h3 class="details">Titulo</h3>
+                  <!--                   <h3 class="details">Titulo</h3> -->
                                 </a>
                             </div>
                         </div>
 
-                        <div *ngIf="noisValid">
+                        <div *ngIf="noisValid5">
                             <div class="sli" *ngFor="let genero of slide15">
                                 <a ><img width="200px" height="300px" [src]="genero.img" />
                                     <br />
-                                    <h3 class="details">Titulo</h3>
+                              <!--       <h3 class="details">Titulo</h3> -->
                                 </a>
                             </div>
                         </div>
