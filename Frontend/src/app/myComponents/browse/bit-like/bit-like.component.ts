@@ -31,8 +31,8 @@ export class BitLikeComponent implements OnInit {
 
   
   
-/* 
-  getGenres(pelicula){
+
+/*   getGenres(pelicula){
     this.contenidoService.getGenres(Comedia).subscribe(
       (genresDB)=>{
         this.genres=genresDB

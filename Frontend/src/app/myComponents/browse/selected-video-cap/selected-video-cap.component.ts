@@ -5,18 +5,17 @@ import {Router} from "@angular/router";
 import {DomSanitizer} from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-selected-peli',
-  templateUrl: './selected-peli.component.html',
-  styleUrls: ['./selected-peli.component.css']
+  selector: 'app-selected-video-cap',
+  templateUrl: './selected-video-cap.component.html',
+  styleUrls: ['./selected-video-cap.component.css']
 })
-export class SelectedPeliComponent implements OnInit {
+export class SelectedVideoCapComponent implements OnInit {
 
   peliculas: any = []
 
   infopeli_local : any;
-
-  pelicula_like = {favorite: false};
   
+  pelicula_like = {favorite: false};
 
   constructor(public rest: contenidoService,  
               private _http: HttpClient,  
@@ -46,19 +45,21 @@ export class SelectedPeliComponent implements OnInit {
 
   }
 
+  
   Like(pelicula){
     console.log(pelicula)
     this.pelicula_like.favorite = true;
     this.rest.updateContenidoLike(this.peliculas[0]._id, this.pelicula_like).subscribe((result) => {
-      alert("Pelicula agregada a BitLike");
+      alert("Serie agregada a BitLike");
     }, (err) => {
       console.log(err);
     });
-
   }
+
 
   GetEmbedUrl(){
     return this.sanitizier.bypassSecurityTrustResourceUrl(this.peliculas[0].trailer)
-  }
+  } 
 
 }
+

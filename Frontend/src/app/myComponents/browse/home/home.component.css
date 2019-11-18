@@ -43,8 +43,9 @@
    .filtros{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 40px;
-    margin-top: 80px;
+    padding-left: 40px;
+    padding-top: 78px;
+    background-color: black;
   }
   .cajita{
     display: flex;
@@ -78,7 +79,6 @@
   
   
   /* pelis */
-  
   .mov{
     display: flex;
     margin-top:50px;
@@ -169,6 +169,7 @@
     width: 100%;
     height: auto;
     padding-top: 36px;
+    background-color: black;
 }
 .contenedorGenero{
     display: grid;

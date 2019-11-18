@@ -1,0 +1,65 @@
+<div class="contenedorInfo">
+<img>
+<!-- *ngFor='let pelicula of peliculas' -->
+    <div class="column1">
+        <div class="afichePeli"><img [src]="pelicula.poster_path" width="250px" height="340px"></div>
+
+        <div class="punctuation">
+            <div class="cuadroPunctuation">Puntuacion: {{pelicula.vote_average}}</div>
+        </div>
+
+        <div class="info1">
+            <h4>Director</h4>
+            <p>{{pelicula.director}}</p>
+
+            <h4>Reparto</h4>
+            <p>{{pelicula.director}}</p>
+            <p>{{pelicula.director}}</p>
+            <p>{{pelicula.director}}</p>
+        </div>
+    </div>
+
+
+    <div class="column2">
+        <div class="parte1" >
+            <div class="info2">
+                <div class="titlePeli">{{pelicula.title}}</div>
+
+                <div class="contenedorGeneros">
+                    <div class="cuadroGenero">{{pelicula.genres}}</div>
+
+                </div>
+            </div>
+            <div class="bitLike" (click)="Like(pelicula)"><img src="../../../../assets/img/botones/botonBitLike.png"
+                    width="120px" height="120px"></div>
+        </div>
+
+        <div class="parte2">
+            <div class="info3">
+                <div class="fecha">Fecha: {{pelicula.release_date}}</div>
+                <div class="country">Pais: {{pelicula.release_date}}</div>
+                <div class="duration">Duracion: {{pelicula.runtime}}</div>
+            </div>
+        </div>
+
+        <div class="parte3" >
+            <div class="categoria">
+                <h3>SINOPSIS</h3>
+                <div class="tipo">{{pelicula.type}}</div>
+            </div>
+            <div class="sinopsis">{{pelicula.overview}}</div>
+        </div>
+    </div>
+</div>
+
+<div class="contenedorMultimedia">
+    <div class="titleVideo">
+        <div class="titlePeliVideo">Película</div>
+        <div class="titleTrailer">Trailers</div>
+    </div>
+
+    <div class="optionVideo">
+        <iframe width="1050" height="500" [src]="GetEmbedUrl()" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>

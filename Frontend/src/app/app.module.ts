@@ -43,6 +43,8 @@ import { EditUserComponent } from './myComponents/dashboard/edit-user/edit-user.
 import { CreateContentComponent } from './myComponents/dashboard/create-content/create-content.component';
 import { SearchComponent } from './myComponents/browse/search/search.component';
 import { BitLikeComponent } from './myComponents/browse/bit-like/bit-like.component';
+import { SelectedSerieComponent } from './myComponents/browse/selected-serie/selected-serie.component';
+import { SelectedVideoCapComponent } from './myComponents/browse/selected-video-cap/selected-video-cap.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +74,9 @@ import { BitLikeComponent } from './myComponents/browse/bit-like/bit-like.compon
     EditUserComponent,
     CreateContentComponent,
     SearchComponent,
-    BitLikeComponent
+    BitLikeComponent,
+    SelectedSerieComponent,
+    SelectedVideoCapComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,157 @@
+<div class="contenedorInfo">
+<img>
+
+    <div class="column1" *ngFor='let pelicula of peliculas'>
+        <div class="afichePeli"><img [src]="pelicula.poster_path" width="250px" height="340px"></div>
+
+        <div class="punctuation">
+            <div class="cuadroPunctuation">Puntuacion: {{pelicula.vote_average}}</div>
+        </div>
+
+        <div class="info1">
+            <h4>Director</h4>
+            <p>{{pelicula.director}}</p>
+
+            <h4>Reparto</h4>
+            <p>Cristina Aguilera</p>
+            <p>Michael Jackson</p>
+            <p>Taylor Swift</p>
+        </div>
+    </div>
+
+
+    <div class="column2" *ngFor='let pelicula of peliculas'>
+        <div class="parte1">
+            <div class="info2">
+                <div class="titlePeli">{{pelicula.title}}</div>
+
+                <div class="contenedorGeneros">
+                    <div class="cuadroGenero">{{pelicula.genres}}</div>
+
+                </div>
+            </div>
+            <div class="bitLike" (click)="Like(pelicula)"><img src="../../../../assets/img/botones/botonBitLike.png"
+                    width="120px" height="120px"></div>
+        </div>
+
+        <div class="parte2">
+            <div class="info3">
+                <div class="fecha">Fecha: {{pelicula.release_date}}</div>
+                <div class="country">Pais: {{pelicula.release_date}}</div>
+                <div class="duration">Duracion: {{pelicula.runtime}}</div>
+            </div>
+        </div>
+
+        <div class="parte3">
+            <div class="categoria">
+                <h3>SINOPSIS</h3>
+                <div class="tipo">{{pelicula.type}}</div>
+            </div>
+            <div class="sinopsis">{{pelicula.overview}}</div>
+        </div>
+    </div>
+</div>
+
+
+<div class="contenedorTemporadas">
+
+    <div class="primeraTemporada">
+        <div class="titleSectionFirstSeason">PRIMERA TEMPORADA</div>
+
+        <div class="SectionFirstSeason">
+            <div class="imgFirstSeason">
+                <img src="img/anime/anime4.jpg" width="350px" height="200px">
+            </div>
+
+            <div class="infoFirstSeason">
+                <div class="titleFirstSeason">Lorem ijdng dfj skksfn dfsopaas lñero</div>
+                <div class="sinopsisFirstSeason">It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
+                    popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    more recently with desktop publishing software like Aldus PageMaker. remaining essentially
+                    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                    Ipsum passages, more recently with desktop publishing software like Aldus PageMaker.in the 1960s
+                    with the
+                    release of Letraset sheets containing Lorem Ipsum passages,
+                    more recently with desktop publishing software like Aldus PageMaker. remaining essentially
+                    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                    Ipsum passages,more recently with desktop publishing software like Aldus PageMaker</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="seleccionarTemporada">
+        <div class="cuadroTemporada">Temporada 1</div>
+        <div class="cuadroTemporada">Temporada 2</div>
+        <div class="cuadroTemporada">Temporada 3</div>
+    </div>
+
+
+    <div class="temporadaSelected">
+
+        <div class="SectionSeason">
+            <div class="imgFirstSeason">
+                <img src="img/anime/anime4.jpg" width="350px" height="200px">
+            </div>
+
+            <div class="infoSeason">
+                <div class="titleSeason">Título del cápitulo</div>
+                <div class="dateSeason">16 nov, 2019</div>
+
+                <div class="sinopsisSeason">It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
+                    popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    more recently with desktop publishing software like Aldus PageMaker. remaining essentially
+                    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                    Ipsum passages, more recently with desktop publishing software like Aldus PageMaker.in the 1960s
+                    with the
+                    release of Letraset sheets containing Lorem Ipsum passages,
+                </div>
+            </div>
+        </div>
+        <div class="SectionSeason">
+            <div class="imgFirstSeason">
+                <img src="img/anime/anime4.jpg" width="350px" height="200px">
+            </div>
+
+            <div class="infoSeason">
+                <div class="titleSeason">Título del cápitulo</div>
+                <div class="dateSeason">16 nov, 2019</div>
+
+                <div class="sinopsisSeason">It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
+                    popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    more recently with desktop publishing software like Aldus PageMaker. remaining essentially
+                    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                    Ipsum passages, more recently with desktop publishing software like Aldus PageMaker.in the 1960s
+                    with the
+                    release of Letraset sheets containing Lorem Ipsum passages,
+                </div>
+            </div>
+        </div>
+        <div class="SectionSeason">
+            <div class="imgFirstSeason">
+                <img src="img/anime/anime4.jpg" width="350px" height="200px">
+            </div>
+
+            <div class="infoSeason">
+                <div class="titleSeason">Título del cápitulo</div>
+                <div class="dateSeason">16 nov, 2019</div>
+
+                <div class="sinopsisSeason">It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
+                    popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    more recently with desktop publishing software like Aldus PageMaker. remaining essentially
+                    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                    Ipsum passages, more recently with desktop publishing software like Aldus PageMaker.in the 1960s
+                    with the
+                    release of Letraset sheets containing Lorem Ipsum passages,
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
