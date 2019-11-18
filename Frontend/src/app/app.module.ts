@@ -41,6 +41,7 @@ import { LateralNavComponent } from './myComponents/dashboard/lateral-nav/latera
 import { CreateUserComponent } from './myComponents/dashboard/create-user/create-user.component';
 import { EditUserComponent } from './myComponents/dashboard/edit-user/edit-user.component';
 import { CreateContentComponent } from './myComponents/dashboard/create-content/create-content.component';
+import { SearchComponent } from './myComponents/browse/search/search.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { CreateContentComponent } from './myComponents/dashboard/create-content/
     LateralNavComponent,
     CreateUserComponent,
     EditUserComponent,
-    CreateContentComponent
+    CreateContentComponent,
+    SearchComponent
 
   ],
   imports: [

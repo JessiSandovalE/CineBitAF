@@ -31,7 +31,10 @@
             </div>
 
             <div class="search">
-                <input type="text" placeholder="Buscar.." name="search">
+                <input id="buscador" type="text" 
+                (keyup.enter)="buscarPelicula(valor.value)"
+                placeholder="Buscar..." name="search"
+                #valor>
             </div>
         </nav>
     </div>
