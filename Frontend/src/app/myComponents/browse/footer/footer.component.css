@@ -3,7 +3,11 @@
     display: grid;
 height: 200px;
 font-family: Arial, Helvetica, sans-serif;
+<<<<<<< HEAD
 padding-top: 120px;
+=======
+padding-top: 100px;
+>>>>>>> b002d6f6e36cd3ea7338024dd54a24f3ff9ffc78
 text-align: center;
 grid-row: 3/4;
 }

@@ -1,0 +1,68 @@
+<div class="container">
+    <h2>Crear Contenido</h2>
+
+    <form [formGroup]="contenido" (ngSubmit)="send(contenido.value)" class="createSong center">
+        <label class="mtop white">
+            <input type="text" formControlName="title" class="i-form" placeholder="Titulo">
+        </label>
+        <br>
+
+        <label class="mtop white">
+            <input type="text" formControlName="poster_path" class="i-form" placeholder="Ruta de imagen del Contenido">
+        </label>
+        <br>
+
+        <label class="mtop white">
+            <input type="text" formControlName="genres" class="i-form" placeholder="Genero">
+        </label>
+         <br>
+
+        <label class="mtop white">
+            <input type="text" formControlName="original_title" class="i-form" placeholder="Titulo Original">
+        </label>
+        <br>
+        
+        <label class="mtop white">
+            <input type="text" formControlName="overview" class="i-form" placeholder="Sinopsis">
+        </label>
+        <br>
+
+        <label class="mtop white">
+            <input type="text" formControlName="popularity" class="i-form" placeholder="Popularidad">
+        </label>
+        <br>
+        <label class="mtop white">
+            <input type="text" formControlName="release_date" class="i-form" placeholder="Fecha">
+        </label>
+        <br>
+        <label class="mtop white">
+            <input type="text" formControlName="runtime" class="i-form" placeholder="Duración">
+        </label>
+        <br>
+        <label class="mtop white">
+            <input type="text" formControlName="vote_average" class="i-form" placeholder="Promedio Votos">
+        </label>
+        <br>
+        
+        <label class="mtop white">
+            <input type="text" formControlName="vote_count" class="i-form" placeholder="Cantidad Votos">
+        </label>
+        <br>
+        <label class="mtop white">
+            <input type="text" formControlName="director" class="i-form" placeholder="Nombre Director - Escritor">
+        </label>
+        <br>
+        
+        <label class="mtop white">
+            <input type="text" formControlName="profile_path" class="i-form" placeholder="Ruta Imagen Director">
+        </label>
+        <br>
+        <label class="mtop white">
+            <input type="text" formControlName="trailer" class="i-form" placeholder="URL trailer">
+        </label>
+        <br>
+        <br>
+        <button type="submit" class="botonOk" >OK</button>
+    </form>
+
+</div>

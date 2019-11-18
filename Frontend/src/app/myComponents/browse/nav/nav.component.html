@@ -24,14 +24,17 @@
 
             <div class="profile">
                
-                <p >Steffany</p>
+                <p id="nameProfile"></p>
                 <a [routerLink]="['/browse/user']">
-                    <img src="../../../assets/img/botones/pop7.jpg" width="40px" height="40px">
+                    <img id= "imgNav" src="" width="40px" height="40px">
                 </a>
             </div>
 
             <div class="search">
-                <input type="text" placeholder="Buscar.." name="search">
+                <input id="buscador" type="text" 
+                (keyup.enter)="buscarPelicula(valor.value)"
+                placeholder="Buscar..." name="search"
+                #valor>
             </div>
         </nav>
     </div>

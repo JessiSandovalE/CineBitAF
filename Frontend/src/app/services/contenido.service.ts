@@ -30,6 +30,7 @@ export class contenidoService {
     return this._http.delete(`${this.url}/${_id}`)
   }
 
+
  /*  crearUsuarios(user):Observable<any> {
     console.log(user);
     return this._http.post(this.url, user);

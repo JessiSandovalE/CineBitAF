@@ -3,6 +3,7 @@ import { FormGroup, FormBuilder, Validators } from "@angular/forms";
 import  { Usuarios } from '../../../module/user.module';
 import { UserService } from "../../../services/user.service"; 
 import {Router} from "@angular/router"
+import { empty } from 'rxjs';
 
 @Component({
   selector: 'inicio',
@@ -11,7 +12,7 @@ import {Router} from "@angular/router"
 })
 export class InicioComponent implements OnInit {
 
-  people= {nombre:"", correo:"", password:""};
+  people= {nombre:"",  correo:"", password:""};
   usuario: any;
   local = {nombre:""};
 
@@ -41,11 +42,14 @@ export class InicioComponent implements OnInit {
      });
   }
 
+
   CompararPasswords(ingresado,leido){
     console.log(ingresado,leido)
 
     localStorage.setItem("nombreUsuarioLogeado",leido.nombre)
     localStorage.setItem("correoUsuarioLogeado",leido.correo)
+    localStorage.setItem("idUsuarioLogeado",leido._id)
+    localStorage.setItem("imgUsuarioLogeado",leido.imagen)
 
     if (ingresado == leido.password){
 

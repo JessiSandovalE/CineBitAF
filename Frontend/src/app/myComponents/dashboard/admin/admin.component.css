@@ -9,13 +9,13 @@
   .contenedorGeneralSections{
     display: flex;
     float: left;
-    padding-top: 3%;
+   padding-top: 3%;
     width: 80%;
     height: 650px;
     align-items: center;
     justify-content: space-around;
     padding-left: 10%;
-    padding-top: 100px;
+   /*  padding-top: 100px; */
   }
   
   .img{

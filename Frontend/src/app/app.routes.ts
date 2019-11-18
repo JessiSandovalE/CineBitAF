@@ -20,7 +20,11 @@ import { AdminComponent } from './myComponents/dashboard/admin/admin.component';
 import { UsersComponent } from './myComponents/dashboard/users/users.component';
 import { PerfilAdminAgregarComponent  } from './myComponents/dashboard/perfil-admin-agregar/perfil-admin-agregar.component';
 import { CreateUserComponent } from './myComponents/dashboard/create-user/create-user.component';
+import { EditUserComponent } from './myComponents/dashboard/edit-user/edit-user.component';
+import { CreateContentComponent } from './myComponents/dashboard/create-content/create-content.component';
+
 import { from } from 'rxjs';
+import { SearchComponent } from './myComponents/browse/search/search.component';
 
 /* import { PerfilAdminAgregarComponent} from './myComponents/perfil-admin-agregar';
  */
@@ -38,13 +42,16 @@ const APP_ROUTES: Routes =[
         {path:'user', component: UserProfileComponent},
         {path:'editUser', component: UserProfileEditComponent},
         {path:'userAvatar', component: UserProfileAvatarComponent},
+        {path:'search/:valor', component: SearchComponent}
     ] },
     {path:'dashboard',component: DashboardComponent, children:[
         {path:'', component: AdminComponent},
         {path:'perfil', component: PerfilAdminComponent},
         {path:'users', component: UsersComponent},
         {path:'movies', component: PerfilAdminAgregarComponent},
-        {path:'createUsers',component:CreateUserComponent}
+        {path:'createUsers',component:CreateUserComponent},
+        {path: 'edit', component:EditUserComponent},
+        {path:'createContent', component:CreateContentComponent}
     ]},
     { path: '**', pathMatch:'full', redirectTo: 'login'},
 

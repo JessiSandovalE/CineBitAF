@@ -1,4 +1,5 @@
 <div class="perfil">
+<<<<<<< HEAD
         <div class="parte1">
             <p>PERFIL</p>
             <div class="imgPerfil">
@@ -43,7 +44,52 @@
                             height="100px"></div>
                     <div class="textoEditar" >Cambiar datos</div>
                 </a>
-            </div>
-    
+=======
+    <div class="parte1">
+        <p>PERFIL</p>
+        <div class="imgPerfil">
+            <div class="sombraImgPerfil"></div>
+            <div class="imgAvatar"><a [routerLink]="['/browse/userAvatar']" routerLinkActive="active">
+                    <img id="profileImg" src="" width="152px" height="152px"></a></div>
+        </div>
+
+        <img src="../../../assets/img/botones/fondoImgPerfil.png" width="400px" height="400px">
+
+        <div class="contenedorEliminar">
+            <button class="eliminar">ELIMINAR CUENTA</button>
         </div>
     </div>
+
+
+    <div class="parte2">
+
+        <div class="datos">
+            <div class="datoName">
+                <P>NOMBRE USUARIO</P>
+                <p id="name"></p>
+
+            </div>
+
+            <div class="datoPassword">
+                <P>CONTRASEÑA </P>
+                <p id="pass"></p>
+>>>>>>> b002d6f6e36cd3ea7338024dd54a24f3ff9ffc78
+            </div>
+
+            <div class="datoEmail">
+                <P>EMAIL </P>
+                <p id="email"></p>
+            </div>
+        </div>
+
+
+        <div class="botonEditar">
+            <a routerLink="/browse/editUser" routerLinkActive="active">
+                <div class="imgFondoEditar"><img src="../../../assets/img/botones/rayasAzulesBoton.png" width="200px"
+                        height="100px"></div>
+                <div class="textoEditar">CAMBIAR DATOS</div>
+            </a>
+        </div>
+
+    </div>
+</div>

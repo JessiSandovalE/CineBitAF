@@ -32,10 +32,14 @@ router.get('/',(req,res,next)=>{
 
 /* METODO GET POR ID */
 router.get('/:id',(req,res,next)=>{
-    Usuarios.findById(req.param.id,(error, usuarios)=>{
-        res.status(200).send({usuarios});
-    });
-});
+    Usuarios.findById({ _id: req.params.id})
+        .then((user) => {
+            res.statusCode = 200;
+            res.setHeader('Content-Type', 'application/json');
+            res.json(user);
+        }, (err) => next(err))
+        .catch((err) => next(err));
+})
 
 /* METODO GET POR USUARIO*/
 router.get('/Usuario/:correo',(req,res,next)=>{
@@ -48,9 +52,6 @@ router.get('/Usuario/:correo',(req,res,next)=>{
             }, (err) => next(err))
             .catch((err) => next(err));
 });
-
-
-
 
 //-------------------------------------------------------------------------
 // UPDATE - METODO: PUT / ACTUALIZAR

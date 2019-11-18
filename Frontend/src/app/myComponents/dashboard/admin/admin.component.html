@@ -12,7 +12,7 @@
 
         <div class="cuadro2">
             <div class="cuadro B">
-               <a href="" >
+                <a [routerLink]="['/']">
                     <div class="imgPerfil Two"></div>
                </a>
             </div>
@@ -33,9 +33,12 @@
 
         <div class="cuadro4">
             <div class="cuadro D">
-                <a [routerLink]="['/dashboard/users']">
-                <div class="imgPerfil Four"></div>
-            </a>
+                <a [routerLink]="['/dashboard/createUsers']">
+                    <div class="imgPerfil Four"></div>
+
+                </a>
+                <!-- <img class="imgPerfil Four"> -->
+               <!--  <p>Crear Usuarios</p> -->
             </div>
         </div>
     </div>

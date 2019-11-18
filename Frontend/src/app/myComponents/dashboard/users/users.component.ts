@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService} from '../../../services/user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-users',
@@ -9,7 +10,8 @@ import { UserService} from '../../../services/user.service';
 export class UsersComponent implements OnInit {
   userList:any =[]
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService,
+    private router: Router) { }
 
   getUsuarios(){
     this.userService.getUsuarios().subscribe(res => {
@@ -27,6 +29,17 @@ export class UsersComponent implements OnInit {
     })
     console.log("Borro Exitosamente");
   
+  }
+
+  editarUsuario(usuario){
+    let id= usuario
+    console.log(usuario);
+    this.userService.getUsuarioID(usuario).subscribe(response =>{
+      this.router.navigate(['/dashboard/edit']);
+      this.getUsuarios()
+
+      
+    })
   }
 
   ngOnInit() {

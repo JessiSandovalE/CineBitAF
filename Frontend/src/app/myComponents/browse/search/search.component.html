@@ -1,0 +1,18 @@
+<div class="contenedorGeneral">
+    <img  id="sorry" src="" alt="">
+    <h1 id="sorry"></h1>
+    <div class="mov" *ngFor='let pelicula of filtro'>
+        <div class="card">
+            <div class="imgBx">
+                <a routerLink='/browse/watch'><img width="200px" height="300px" [src]="pelicula.poster_path" /> </a>
+            </div>
+            <div class="details">
+                <h3>{{pelicula.title}}</h3>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+

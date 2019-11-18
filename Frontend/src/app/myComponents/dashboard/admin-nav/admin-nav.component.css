@@ -18,7 +18,7 @@ nav{
 .list{
   display: flex;
   list-style: none;
-  margin-left: 73%;
+  margin-left: 65%;
 } 
 nav ul li {
   height: 80px;
