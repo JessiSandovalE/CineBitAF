@@ -12,25 +12,25 @@ export class HomeComponent implements OnInit {
   slide = [
     {
       artista: "Historia1",
-      img: "../../../assets/img/historia/historia1.jpg",
+      img: "../../../assets/img/romance/romance1.jpg",
       url: "/contenidoConFiltros",
       bot: true
     },
     {
       artista: "Historia2",
-      img: "../../../assets/img/historia/historia2.jpg",
+      img: "../../../assets/img/romance/romance2.jpg",
       url: "/contenidoConFiltros",
       bot: true
     },
     {
       artista: "Historia3",
-      img: "../../../assets/img/historia/historia3.jpg",
+      img: "../../../assets/img/romance/romance3.jpg",
       url: "/contenidoConFiltros",
       bot: true
     },
     {
       artista: "Historia4",
-      img: "../../../assets/img/historia/historia4.jpg",
+      img: "../../../assets/img/romance/romance4.jpg",
       url: "/contenidoConFiltros",
       bot: true
     }
@@ -40,28 +40,28 @@ export class HomeComponent implements OnInit {
     {
       album: "Madame X",
       artista: "Madonna",
-      img: "../../../assets/img/historia/seriehistoria1.jpg",
+      img: "../../../assets/img/romance/serieromance1.jpg",
       url: "/contenidoConFiltros",
       bot: true
     },
     {
       album: "Lemonade",
       artista: "Beyoncé",
-      img: "../../../assets/img/historia/seriehistoria2.jpg",
+      img: "../../../assets/img/romance/serieromance2.jpg",
       url: "/contenidoConFiltros",
       bot: true
     },
     {
       album: "25",
       artista: "Adele",
-      img: "../../../assets/img/historia/seriehistoria3.jpg",
+      img: "../../../assets/img/romance/serieromance3.jpg",
       url: "/contenidoConFiltros",
       bot: true
     },
     {
       album: "Dua Lipa",
       artista: "Dua Lipa",
-      img: "../../../assets/img/historia/seriehistoria4.jpg",
+      img: "../../../assets/img/romance/serieromance4.jpg",
       url: "/contenidoConFiltros",
       bot: true
     }
@@ -86,7 +86,7 @@ slide2 = [
     id: 6,
     album: "Abbey Road",
     artista: "The Beatles",
-    img: "../../../assets/img/comedia/comedia1.jpg",
+    img: "../../../assets/img/drama/drama1.jpg",
     url: "/contenidoConFiltros",
     bot: false
   },
@@ -94,7 +94,7 @@ slide2 = [
     id: 7,
     album: "In Rainbows",
     artista: "Radiohead",
-    img: "../../../assets/img/comedia/comedia2.jpg",
+    img: "../../../assets/img/drama/drama2.jpg",
     url: "/contenidoConFiltros",
     bot: false
   },
@@ -102,7 +102,7 @@ slide2 = [
     id: 8,
     album: "Dark Side of The Moon",
     artista: "Pink Floyd",
-    img: "../../../assets/img/comedia/comedia3.jpg",
+    img: "../../../assets/img/drama/drama3.jpg",
     url: "/contenidoConFiltros",
     bot: false
   },
@@ -110,7 +110,7 @@ slide2 = [
     id: 9,
     album: "InnerSpeaker",
     artista: "Tame Impala",
-    img: "../../../assets/img/comedia/comedia4.jpg",
+    img: "../../../assets/img/drama/drama4.jpg",
     url: "/contenidoConFiltros",
     bot: false
   }
@@ -121,28 +121,28 @@ slide12 = [
     id: 10,
     album: "Melody's Echo Chamber",
     artista: "Melody's Echo Chamber",
-    img: "../../../assets/img/comedia/seriecomedia1.jpg",
+    img: "../../../assets/img/drama/seriedrama1.jpg",
     url: "/contenidoConFiltros",
     bot: false
   },
   {
     album: "Houses Of The Holy",
     artista: "Led Zeppelin",
-    img: "../../../assets/img/comedia/seriecomedia2.jpg",
+    img: "../../../assets/img/drama/seriedrama2.jpg",
     url: "/contenidoConFiltros",
     bot: false
   },
   {
     album: "A Night at the Opera",
     artista: "Queen",
-    img: "../../../assets/img/comedia/seriecomedia3.jpg",
+    img: "../../../assets/img/drama/seriedrama3.jpg",
     url: "/contenidoConFiltros",
     bot: false
   },
   {
     album: "Let It Bleed",
     artista: "The Rolling Stones",
-    img: "../../../assets/img/comedia/seriecomedia4.jpg",
+    img: "../../../assets/img/drama/seriedrama4.jpg",
     url: "/contenidoConFiltros",
     bot: false
   }
@@ -167,7 +167,7 @@ slide3 = [
     id: 11,
     album: "¡Metiendo mano!",
     artista: "Willie Colón y Rubén Blades",
-    img: "../../../assets/img/drama/drama1.jpg",
+    img: "../../../assets/img/anime/anime1.jpg",
     url: "/contenidoConFiltros",
     bot: true
   },
@@ -175,7 +175,7 @@ slide3 = [
     id: 12,
     album: "El mismo",
     artista: "ChocQuibTown",
-    img: "../../../assets/img/drama/drama2.jpg",
+    img: "../../../assets/img/anime/anime2.jpg",
     url: "/contenidoConFiltros",
     bot: true
   },
@@ -183,7 +183,7 @@ slide3 = [
     id: 13,
     album: "La revancha del burro",
     artista: "Systema Solar",
-    img: "../../../assets/img/drama/drama3.jpg",
+    img: "../../../assets/img/anime/anime3.jpg",
     url: "/contenidoConFiltros",
     bot: true
   },
@@ -191,7 +191,7 @@ slide3 = [
     id: 14,
     album: "Elegancia Tropical",
     artista: "Bomba Estéreo",
-    img: "../../../assets/img/drama/drama4.jpg",
+    img: "../../../assets/img/anime/anime4.jpg",
     url: "/contenidoConFiltros",
     bot: true
   }
@@ -202,28 +202,28 @@ slide13 = [
     id: 15,
     album: "La tierra del Olvido",
     artista: "Carlos Vives",
-    img: "../../../assets/img/drama/seriedrama1.jpg",
+    img: "../../../assets/img/anime/serieanime1.jpg",
     url: "/contenidoConFiltros",
     bot: false
   },
   {
     album: "Buenos Hermanos",
     artista: "Ibrahim Ferrer",
-    img: "../../../assets/img/drama/seriedrama2.jpg",
+    img: "../../../assets/img/anime/serieanime2.jpg",
     url: "/contenidoConFiltros",
     bot: false
   },
   {
     album: "Bachata Rosa",
     artista: "Juan Luis Guerra",
-    img: "../../../assets/img/drama/seriedrama3.jpg",
+    img: "../../../assets/img/anime/serieanime3.jpg",
     url: "/contenidoConFiltros",
     bot: false
   },
   {
     album: "Joe Arroyo y La Verdad",
     artista: "Joe Arroyo",
-    img: "../../../assets/img/drama/seriedrama4.jpg",
+    img: "../../../assets/img/anime/serieanime4.jpg",
     url: "/contenidoConFiltros",
     bot: false
   }
@@ -329,7 +329,7 @@ slide5 = [
     id: 6,
     album: "Abbey Road",
     artista: "The Beatles",
-    img: "../../../assets/img/comedia/comedia1.jpg",
+    img: "../../../assets/img/historia/historia1.jpg",
     url: "/contenidoConFiltros",
     bot: false
   },
@@ -337,7 +337,7 @@ slide5 = [
     id: 7,
     album: "In Rainbows",
     artista: "Radiohead",
-    img: "../../../assets/img/comedia/comedia2.jpg",
+    img: "../../../assets/img/historia/historia2.jpg",
     url: "/contenidoConFiltros",
     bot: false
   },
@@ -345,7 +345,7 @@ slide5 = [
     id: 8,
     album: "Dark Side of The Moon",
     artista: "Pink Floyd",
-    img: "../../../assets/img/comedia/comedia3.jpg",
+    img: "../../../assets/img/historia/historia3.jpg",
     url: "/contenidoConFiltros",
     bot: false
   },
@@ -353,7 +353,7 @@ slide5 = [
     id: 9,
     album: "InnerSpeaker",
     artista: "Tame Impala",
-    img: "../../../assets/img/comedia/comedia4.jpg",
+    img: "../../../assets/img/historia/historia4.jpg",
     url: "/contenidoConFiltros",
     bot: false
   }
@@ -364,28 +364,28 @@ slide15 = [
     id: 10,
     album: "Melody's Echo Chamber",
     artista: "Melody's Echo Chamber",
-    img: "../../../assets/img/comedia/seriecomedia1.jpg",
+    img: "../../../assets/img/historia/seriehistoria1.jpg",
     url: "/contenidoConFiltros",
     bot: false
   },
   {
     album: "Houses Of The Holy",
     artista: "Led Zeppelin",
-    img: "../../../assets/img/comedia/seriecomedia2.jpg",
+    img: "../../../assets/img/historia/seriehistoria2.jpg",
     url: "/contenidoConFiltros",
     bot: false
   },
   {
     album: "A Night at the Opera",
     artista: "Queen",
-    img: "../../../assets/img/comedia/seriecomedia3.jpg",
+    img: "../../../assets/img/historia/seriehistoria3.jpg",
     url: "/contenidoConFiltros",
     bot: false
   },
   {
     album: "Let It Bleed",
     artista: "The Rolling Stones",
-    img: "../../../assets/img/comedia/seriecomedia4.jpg",
+    img: "../../../assets/img/historia/seriehistoria4.jpg",
     url: "/contenidoConFiltros",
     bot: false
   }
