@@ -21,6 +21,7 @@ import { UsersComponent } from './myComponents/dashboard/users/users.component';
 import { PerfilAdminAgregarComponent  } from './myComponents/dashboard/perfil-admin-agregar/perfil-admin-agregar.component';
 import { CreateUserComponent } from './myComponents/dashboard/create-user/create-user.component';
 import { from } from 'rxjs';
+import { SearchComponent } from './myComponents/browse/search/search.component';
 
 /* import { PerfilAdminAgregarComponent} from './myComponents/perfil-admin-agregar';
  */
@@ -38,6 +39,7 @@ const APP_ROUTES: Routes =[
         {path:'user', component: UserProfileComponent},
         {path:'editUser', component: UserProfileEditComponent},
         {path:'userAvatar', component: UserProfileAvatarComponent},
+        {path:'search/:valor', component: SearchComponent}
     ] },
     {path:'dashboard',component: DashboardComponent, children:[
         {path:'', component: AdminComponent},
