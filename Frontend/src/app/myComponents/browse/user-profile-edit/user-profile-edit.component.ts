@@ -1,6 +1,8 @@
 import { UserService } from './../../../services/user.service';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from "@angular/forms";
+import {Router} from "@angular/router"
+
 
 @Component({
   selector: 'app-userprofileedit',
@@ -13,7 +15,8 @@ export class UserProfileEditComponent implements OnInit {
 
   constructor(
     private builder: FormBuilder,
-    private usuariosService: UserService
+    private usuariosService: UserService,
+    private router: Router 
   ) { }
 
  
@@ -31,6 +34,7 @@ export class UserProfileEditComponent implements OnInit {
       alert("Se actualizaron los datos");
       let nameProfile = document.getElementById('nameProfile');
       nameProfile.textContent = response.nombre;
+      this.router.navigate(['/login'])
       console.log(response);
     })
   }

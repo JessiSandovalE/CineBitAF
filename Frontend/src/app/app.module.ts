@@ -39,6 +39,7 @@ import { PerfilAdminAgregarComponent  } from './myComponents/dashboard/perfil-ad
 import { FormUserComponent } from './myComponents/dashboard/form-user/form-user.component';
 import { LateralNavComponent } from './myComponents/dashboard/lateral-nav/lateral-nav.component';
 import { CreateUserComponent } from './myComponents/dashboard/create-user/create-user.component';
+import { EditUserComponent } from './myComponents/dashboard/edit-user/edit-user.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { CreateUserComponent } from './myComponents/dashboard/create-user/create
     UsersComponent,
     FormUserComponent,
     LateralNavComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    EditUserComponent
 
   ],
   imports: [

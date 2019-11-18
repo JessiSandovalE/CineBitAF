@@ -53,7 +53,7 @@
     height: 60px;
     background-color: #CCCCCC;
     margin-bottom: 5px;
-    grid-template-columns: 30% 30% 20% 20%;
+    grid-template-columns: 30% 30% 20% 10% 10%;
   }
   .barraTitle{
       display: grid;
@@ -61,7 +61,7 @@
       height: 60px;
       background-color: #912932;
       margin-bottom: 5px;
-      grid-template-columns: 30% 30% 20% 20%;
+      grid-template-columns: 30% 30% 20% 10%  10%;
   }
   .nombreAdminCreado{
     display: grid;

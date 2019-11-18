@@ -18,7 +18,8 @@
                 <div class="datos">Nombre</div>
                 <div class="datos">Email</div>
                 <div class="datos">Role</div>
-                <div class="datos">Editar / Eliminar</div>
+                <div class="datos">Editar</div>
+                <div class="datos">Eliminar</div>
 
             </div>   
             <div class="barraInfo center" *ngFor="let user of userList.usuarios">
@@ -26,8 +27,10 @@
                 <div class="datos2">{{user.correo}}</div>
                 <div class="datos2">{{user.role}}</div>
                 
+                <a (click)= 'editarUsuario(user._id)'>
+                    <img src="../../../assets/img/botones/botonEditarAdmin.png" width="45px" height="45px" class="botones">
+                </a>
                 <a (click)='borrarUsuario(user._id)' >
-                        <img src="../../../assets/img/botones/botonEditarAdmin.png" width="45px" height="45px" class="botones">
                         <img src="../../../assets/img/botones/botonQuitarAdmin.png" width="70px" height="50px" class="botones">
                 </a>
             </div>
