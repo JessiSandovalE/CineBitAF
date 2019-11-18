@@ -16,6 +16,7 @@ import { AdminProfileComponent } from './myComponents/dashboard/admin-profile/ad
 import { PerfilAdminComponent } from './myComponents/dashboard/perfil-admin/perfil-admin.component';
 import { UserProfileAvatarComponent } from './myComponents/browse/user-profile-avatar/user-profile-avatar.component';
 import { SelectedPeliComponent } from './myComponents/browse/selected-peli/selected-peli.component';
+import { BitLikeComponent } from './myComponents/browse/bit-like/bit-like.component';
 import { AdminComponent } from './myComponents/dashboard/admin/admin.component';
 import { UsersComponent } from './myComponents/dashboard/users/users.component';
 import { PerfilAdminAgregarComponent  } from './myComponents/dashboard/perfil-admin-agregar/perfil-admin-agregar.component';
@@ -39,6 +40,7 @@ const APP_ROUTES: Routes =[
         {path: '' , component: HomeComponent},
         {path: 'content', component: ContentComponent},
         {path: 'watch', component: SelectedPeliComponent},
+        {path: 'bitLike', component: BitLikeComponent},
         {path:'user', component: UserProfileComponent},
         {path:'editUser', component: UserProfileEditComponent},
         {path:'userAvatar', component: UserProfileAvatarComponent},

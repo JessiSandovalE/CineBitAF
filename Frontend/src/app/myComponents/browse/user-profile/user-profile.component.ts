@@ -9,7 +9,7 @@ import { UserService } from '../../../services/user.service'
 })
 export class UserProfileComponent implements OnInit {
 
-<<<<<<< HEAD
+
 /*   mostrarContrasena(){
     var tipo = document.getElementById("password");
     if(tipo.type == "password"){
@@ -19,8 +19,7 @@ export class UserProfileComponent implements OnInit {
     }
  } */
  
-  constructor() {}
-=======
+
   constructor( private usuariosService: UserService) { }
     user = localStorage.getItem('idUsuarioLogeado')
 
@@ -39,7 +38,7 @@ export class UserProfileComponent implements OnInit {
       })
 
     }
->>>>>>> b002d6f6e36cd3ea7338024dd54a24f3ff9ffc78
+
 
   ngOnInit() {
     this.cargarData();

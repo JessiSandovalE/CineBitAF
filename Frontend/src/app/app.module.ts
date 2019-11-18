@@ -42,6 +42,7 @@ import { CreateUserComponent } from './myComponents/dashboard/create-user/create
 import { EditUserComponent } from './myComponents/dashboard/edit-user/edit-user.component';
 import { CreateContentComponent } from './myComponents/dashboard/create-content/create-content.component';
 import { SearchComponent } from './myComponents/browse/search/search.component';
+import { BitLikeComponent } from './myComponents/browse/bit-like/bit-like.component';
 
 @NgModule({
   declarations: [
@@ -70,8 +71,8 @@ import { SearchComponent } from './myComponents/browse/search/search.component';
     CreateUserComponent,
     EditUserComponent,
     CreateContentComponent,
-    SearchComponent
-
+    SearchComponent,
+    BitLikeComponent
   ],
   imports: [
     BrowserModule,

@@ -29,6 +29,33 @@ detailsController.getFindId = async (id) => {
   });
 }
 
+
+/* ESTÁ EN EL DE STEFANY */
+/* detailsController.getFindId = async (id) => {
+  return new Promise(async (resolve, reject) => {
+    Detail.findById(id, (err, data) => {
+      if (err) reject(err);
+      resolve(data);
+    })
+  })
+}
+
+
+detailsController.getFindId = async (id) => {
+  console.log(id)
+  return new Promise((resolve, reject) => {
+    try {
+      Detail.find({_id: id}, (err, data) => {
+        if (err) resolve(err);
+        resolve(data); 
+        console.log(data)
+      })
+    } catch (error) {
+      reject(error);
+    }
+  });
+} */
+
 detailsController.createDetail = async (body) => {
   return new Promise(async (resolve, reject) => {
     try {
