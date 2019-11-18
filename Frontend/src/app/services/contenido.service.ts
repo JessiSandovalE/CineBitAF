@@ -49,6 +49,9 @@ getContenidoid(id): Observable<any>{
 }
 
 
+getType(type):Observable<any>{
+  return this._http.get<any>(this.url+"/type/"+type)
+}
  /*  crearUsuarios(user):Observable<any> {
     console.log(user);
     return this._http.post(this.url, user);

@@ -23,6 +23,9 @@ import { UserProfileComponent } from './myComponents/browse/user-profile/user-pr
 import { UserProfileEditComponent } from './myComponents/browse/user-profile-edit/user-profile-edit.component';
 import { UserProfileAvatarComponent } from './myComponents/browse/user-profile-avatar/user-profile-avatar.component';
 import { SelectedPeliComponent } from './myComponents/browse/selected-peli/selected-peli.component';
+import { FiltersComponent } from './myComponents/browse/genresFilter/filters.component';
+import { TypeFilterComponent } from './myComponents/browse/type-filter/type-filter.component';
+
 //Login
 import { LoginComponent } from './myComponents/login/login.component';
 import { InicioComponent } from './myComponents/login/inicio/inicio.component';
@@ -76,7 +79,9 @@ import { SelectedVideoCapComponent } from './myComponents/browse/selected-video-
     SearchComponent,
     BitLikeComponent,
     SelectedSerieComponent,
-    SelectedVideoCapComponent
+    SelectedVideoCapComponent,
+    FiltersComponent,
+  TypeFilterComponent
   ],
   imports: [
     BrowserModule,

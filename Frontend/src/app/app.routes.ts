@@ -25,6 +25,9 @@ import { PerfilAdminAgregarComponent  } from './myComponents/dashboard/perfil-ad
 import { CreateUserComponent } from './myComponents/dashboard/create-user/create-user.component';
 import { EditUserComponent } from './myComponents/dashboard/edit-user/edit-user.component';
 import { CreateContentComponent } from './myComponents/dashboard/create-content/create-content.component';
+import { FiltersComponent } from './myComponents/browse/genresFilter/filters.component';
+import { TypeFilterComponent } from './myComponents/browse/type-filter/type-filter.component';
+
 
 import { from } from 'rxjs';
 import { SearchComponent } from './myComponents/browse/search/search.component';
@@ -48,7 +51,9 @@ const APP_ROUTES: Routes =[
         {path:'user', component: UserProfileComponent},
         {path:'editUser', component: UserProfileEditComponent},
         {path:'userAvatar', component: UserProfileAvatarComponent},
-        {path:'search/:valor', component: SearchComponent}
+        {path:'search/:valor', component: SearchComponent},
+        {path:'genresFilters', component: FiltersComponent},
+        {path:'typeFilters', component: TypeFilterComponent}
     ] },
     {path:'dashboard',component: DashboardComponent, children:[
         {path:'', component: AdminComponent},

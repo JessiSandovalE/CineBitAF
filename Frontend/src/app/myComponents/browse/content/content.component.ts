@@ -31,7 +31,23 @@ obtenerContenido(){
 
 } */
 
+ 
 listaDePeliculas: any = []
+filteredByGender:any=[]
+filteredByType:any=[]
+
+genresList=['Romance',
+'Comedia', 
+'Animación', 
+'Aventura', 
+'Suspenso', 
+'Fantasía', 
+'Acción y aventura', 
+'Drama',
+'Fantasía y ciencia ficción',
+'Mujeres en la historia']
+typesList=['Serie','Película']
+
 
 info = {_id:""};
 
@@ -61,6 +77,60 @@ Componente(pelicula){
 
 /*   this.router.navigate(['/browse/watch']) */
 }
+
+
+GetGenres(genre){
+
+  switch (genre) {
+    case "Suspenso": 
+    genre="Suspense"
+      break;
+    case"Acción y aventura":
+        genre="Action & Adventure"
+        break;
+    case "Fantasía y ciencia ficción":
+        genre="Sci-Fi & Fantasy"
+        break;
+    case "Mujeres en la historia":
+        genre="Historia"
+        break;
+  }
+  console.log(genre);
+  this.contenidoService.getGenres(genre).subscribe(
+    (genresDB)=>{
+      this.filteredByGender=genresDB;
+      console.log(this.filteredByGender);
+      console.log("genero seleccionado");
+      localStorage.setItem('filteredByGender',this.filteredByGender[0].genres);
+      this.router.navigate(['/browse/genresFilters']);
+    }
+  )
+
+} 
+
+
+GetTypes(type){
+  console.log(type);
+  switch (type) {
+    case "Serie":type="tv" 
+      break;
+    case "Película":type="movie"
+    /* default: */
+      break;
+  }
+  
+  this.contenidoService.getType(type).subscribe(
+    (dbContent)=>{
+      this.filteredByType=dbContent;
+      console.log(this.filteredByGender);
+      console.log("tipo seleccionado");
+      localStorage.setItem('filteredByType',this.filteredByType[0].type);
+      this.router.navigate(['/browse/typeFilters']);
+    }
+  )
+
+} 
+
 
   ngOnInit() {
     this.obtenerContenido();

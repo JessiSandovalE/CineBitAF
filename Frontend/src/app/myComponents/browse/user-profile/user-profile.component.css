@@ -25,7 +25,7 @@
   a{
     text-decoration: none;
   }
-  .parte1 > p{
+  .parte1 > a >p{
     display: grid;
     grid-row: 3/5;
     grid-column: 3/5;

@@ -1,0 +1,19 @@
+
+<div class="encabezado">
+    
+</div>
+
+
+<div class="contenidoPelis">
+    <div class="mov" *ngFor='let movies of listaDePeliculas'>
+        <div class="card">
+            <div class="imgBx">
+                <a ><img width="200px" height="300px" [src]="movies.poster_path" (click)="Componente(pelicula)" /> </a>
+            </div>
+            <div class="details">
+                   
+                <h3>{{movies.title}}</h3>
+            </div>
+        </div>
+    </div>
+</div>
