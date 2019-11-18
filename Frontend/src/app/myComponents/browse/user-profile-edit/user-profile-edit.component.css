@@ -11,7 +11,6 @@
     display: grid;
     grid-column: 1/2;
     background-color: #1F2345;
-  
     grid-template-rows: repeat(8, 90px);
     grid-template-columns: repeat(8, 86px);
   }
@@ -53,6 +52,10 @@
     background-color: #1F202B;
     border-radius: 150px;
     margin-top: 10px;
+  }
+
+  .fondo{
+    z-index: 100;
   }
   .imgAvatar{
     display: grid;
@@ -103,7 +106,7 @@
     display: grid;
     grid-column: 2/3;
     padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     background-color: #CCCCCC;
     justify-content: center;
     text-align: center;
@@ -140,7 +143,7 @@ padding-top: 50px;
     color: white;
     padding: 15px 35px;
     margin-left: 500PX;
-    margin-top: 100px;
+    /* margin-top: 50px; */
     cursor: pointer;
   }
 /* FIN PARTE 4 */

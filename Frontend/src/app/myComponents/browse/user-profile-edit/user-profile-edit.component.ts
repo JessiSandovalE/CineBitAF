@@ -34,7 +34,7 @@ export class UserProfileEditComponent implements OnInit {
       alert("Se actualizaron los datos");
       let nameProfile = document.getElementById('nameProfile');
       nameProfile.textContent = response.nombre;
-      this.router.navigate(['/login'])
+      this.router.navigate(['/browse/user']);
       console.log(response);
     })
   }

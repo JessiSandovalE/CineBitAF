@@ -21,6 +21,8 @@ import { UsersComponent } from './myComponents/dashboard/users/users.component';
 import { PerfilAdminAgregarComponent  } from './myComponents/dashboard/perfil-admin-agregar/perfil-admin-agregar.component';
 import { CreateUserComponent } from './myComponents/dashboard/create-user/create-user.component';
 import { EditUserComponent } from './myComponents/dashboard/edit-user/edit-user.component';
+import { CreateContentComponent } from './myComponents/dashboard/create-content/create-content.component';
+
 import { from } from 'rxjs';
 
 /* import { PerfilAdminAgregarComponent} from './myComponents/perfil-admin-agregar';
@@ -46,7 +48,8 @@ const APP_ROUTES: Routes =[
         {path:'users', component: UsersComponent},
         {path:'movies', component: PerfilAdminAgregarComponent},
         {path:'createUsers',component:CreateUserComponent},
-        {path: 'edit', component:EditUserComponent}
+        {path: 'edit', component:EditUserComponent},
+        {path:'createContent', component:CreateContentComponent}
     ]},
     { path: '**', pathMatch:'full', redirectTo: 'login'},
 

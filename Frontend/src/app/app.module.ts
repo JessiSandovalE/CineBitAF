@@ -40,6 +40,7 @@ import { FormUserComponent } from './myComponents/dashboard/form-user/form-user.
 import { LateralNavComponent } from './myComponents/dashboard/lateral-nav/lateral-nav.component';
 import { CreateUserComponent } from './myComponents/dashboard/create-user/create-user.component';
 import { EditUserComponent } from './myComponents/dashboard/edit-user/edit-user.component';
+import { CreateContentComponent } from './myComponents/dashboard/create-content/create-content.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { EditUserComponent } from './myComponents/dashboard/edit-user/edit-user.
     FormUserComponent,
     LateralNavComponent,
     CreateUserComponent,
-    EditUserComponent
+    EditUserComponent,
+    CreateContentComponent
 
   ],
   imports: [
