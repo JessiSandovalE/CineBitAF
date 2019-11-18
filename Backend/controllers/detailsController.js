@@ -17,11 +17,13 @@ detailsController.getAll = async () => {
 }
 
 detailsController.getFindId = async (id) => {
+  console.log(id)
   return new Promise((resolve, reject) => {
     try {
-      Detail.findById(req.params.id, (err, data) => {
+      Detail.find({_id: id}, (err, data) => {
         if (err) resolve(err);
-        resolve(data);
+        resolve(data); 
+        console.log(data)
       })
     } catch (error) {
       reject(error);

@@ -6,6 +6,16 @@
     grid-template-rows: repeat(24, 1fr);
     grid-template-columns: 15% 20% 50% 15% ;
   }
+  .cuadroPunctuation{
+    display: grid;
+    width: 250px;
+    height: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: #E0E0E0;
+    text-align: center;
+    background-color: rgb(66, 66, 66);
+  }
   .contenedorInfo > img{
     display: grid;
     width: 100%;
