@@ -10,6 +10,8 @@ import { contenido } from "src/app/module/contenido.module";
 export class contenidoService {
   private url =
     "http://localhost:3000/detail"; /* variable privada que solo sirve en este modulo */
+
+  private url2 = "http://localhost:3000/data";
   
   
 
@@ -33,6 +35,12 @@ export class contenidoService {
 /* Metodo GET por ID*/
 getContenidoid(id): Observable<any>{
   return this._http.get(this.url+"/"+id).pipe(
+    map(this.extractData));
+}
+
+/* Metodo GET por ID*/
+getContenidoid_new(id): Observable<any>{
+  return this._http.get(this.url2+"/data/"+id).pipe(
     map(this.extractData));
 }
 

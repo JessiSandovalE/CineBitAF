@@ -10,26 +10,6 @@ import { contenidoService } from '../../../services/contenido.service';
 })
 export class ContentComponent implements OnInit {
  
-/* listaDePeliculas: any = []
-
-
-constructor(private contenidoService: contenidoService) { }
-
-obtenerContenido(){
-  this.contenidoService.getContenido().subscribe(res=>{
-
-    console.log(res);
-
-   this.listaDePeliculas = res
-  })
-}
-
-
-  ngOnInit() {
-    this.obtenerContenido();
-  }
-
-} */
 
  
 listaDePeliculas: any = []

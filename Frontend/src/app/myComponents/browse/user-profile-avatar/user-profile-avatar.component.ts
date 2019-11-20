@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../../../services/user.service'
-
+import {Router} from "@angular/router"
 @Component({
   selector: 'app-useravatar',
   templateUrl: './user-profile-avatar.component.html',
   styleUrls: ['./user-profile-avatar.component.css']
 })
 export class UserProfileAvatarComponent implements OnInit {
+ 
 
-  constructor( private usuariosservice: UserService) { }
+  constructor( private usuariosservice: UserService, private router: Router ) { }
   //variables 
   people= {imagen:""};
   user = localStorage.getItem('idUsuarioLogeado');
@@ -39,6 +40,7 @@ export class UserProfileAvatarComponent implements OnInit {
       this.people.imagen = srcActual; 
       this.usuariosservice.updateUsuario(this.user, this.people).subscribe(response =>{
         alert ('Se actualizo correctamente');
+        this.router.navigate(['/browse/user']);
       })
   
     }
